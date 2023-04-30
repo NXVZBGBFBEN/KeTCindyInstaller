@@ -1,8 +1,9 @@
+use crate::config::Select;
 use num_derive::FromPrimitive;
 use std::fmt::{Display, Formatter, Result};
 use strum_macros::EnumIter;
 
-#[derive(Debug, EnumIter, FromPrimitive)]
+#[derive(EnumIter, FromPrimitive)]
 pub(crate) enum Graphic {
     Pict2e,
     Tpic,
@@ -18,3 +19,5 @@ impl Display for Graphic {
         }
     }
 }
+
+impl Select for Graphic {}

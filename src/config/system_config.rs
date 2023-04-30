@@ -1,31 +1,39 @@
-use crate::config::Config;
+use crate::config::{Config, Select};
 
 mod graphic;
 mod language;
-mod texused;
+mod texengine;
 use graphic::Graphic;
 use language::Language;
-use texused::TexUsed;
+use texengine::TexEngine;
 
-use std::fmt::Debug;
+use std::fmt;
+use std::fmt::{Display, Formatter};
 use std::io::Error;
 
-#[derive(Debug)]
 pub struct SystemConfig {
     lang: Language,
-    tex: TexUsed,
-    graphics: Graphic,
+    tex: TexEngine,
+    graphic: Graphic,
 }
 
-impl SystemConfig {
-    pub fn new() -> Result<Self, Error> {
-        let lang = Config::select::<Language>()?;
-        let tex = Config::select::<TexUsed>()?;
-        let graphics = Config::select::<Graphic>()?;
-        Ok(Self {
-            lang,
-            tex,
-            graphics,
-        })
+impl Display for SystemConfig {
+    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
+        write!(
+            f,
+            " Language - {}\n \
+              Engine   - {}\n \
+              Graphic  - {}",
+            self.lang, self.tex, self.graphic
+        )
+    }
+}
+
+impl Config<SystemConfig> for SystemConfig {
+    fn new() -> Result<SystemConfig, Error> {
+        let lang = Language::select()?;
+        let tex = TexEngine::select()?;
+        let graphic = Graphic::select()?;
+        Ok(Self { lang, tex, graphic })
     }
 }
