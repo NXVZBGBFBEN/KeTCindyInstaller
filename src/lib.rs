@@ -1,1 +1,1 @@
-pub mod system_config;
+pub mod config;
