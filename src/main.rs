@@ -9,7 +9,7 @@ fn main() {
     println!("System:");
     let mut system: SystemConfig;
     loop {
-        system = match SystemConfig::new() {
+        system = match SystemConfig::pick() {
             Ok(x) => x,
             Err(e) => {
                 println!("ERR! {e}");

@@ -30,7 +30,7 @@ impl Display for SystemConfig {
 }
 
 impl Config<SystemConfig> for SystemConfig {
-    fn new() -> Result<SystemConfig, Error> {
+    fn pick() -> Result<SystemConfig, Error> {
         let lang = Language::select()?;
         let tex = TexEngine::select()?;
         let graphic = Graphic::select()?;
