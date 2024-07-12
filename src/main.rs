@@ -4,6 +4,10 @@ use console::Term;
 use dialoguer::Confirm;
 
 fn main() {
+}
+
+/*
+fn main() {
     let stdout = Term::stdout();
     println!("This is KeTCindyInstaller, Version 0.1.0-alpha");
     println!("System:");
@@ -38,3 +42,4 @@ fn main() {
      */
     //println!("Path:");
 }
+*/
