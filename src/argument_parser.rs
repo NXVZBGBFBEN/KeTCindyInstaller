@@ -2,7 +2,7 @@ use clap::Parser;
 
 #[derive(clap::Parser)]
 #[command(name = "KeTCindyInstaller", version, about)]
-pub struct Arguments {
+pub struct Argument {
     #[command(subcommand)]
     pub subcommand: Subcommand
 }
@@ -27,6 +27,6 @@ pub enum Package {
     Ketcindy,
 }
 
-pub fn parse() -> Arguments {
-    return Arguments::parse();
+pub fn parse_argument() -> Argument {
+    return Argument::parse();
 }
