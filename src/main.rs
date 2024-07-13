@@ -1,10 +1,5 @@
-use clap::Parser;
-
-#[derive(Parser)]
-#[command(name = "KeTCindyInstaller", version, about)]
-struct Cli {
-}
+use ketcindyinstaller::argument_parser;
 
 fn main() {
-    let cli = Cli::parse();
+    let _arguments = argument_parser::parse();
 }
