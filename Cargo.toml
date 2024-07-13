@@ -1,4 +1,13 @@
 [package]
 name = "ketcindyinstaller"
 version = "0.1.0"
+authors = ["NXVZBGBFBEN <nxvzbgbfben@gmail.com>"]
 edition = "2021"
+description = "A simple package manager for KeTCindy projects"
+
+[[bin]]
+name = "ketpm"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5.9", features = ["derive"] }
