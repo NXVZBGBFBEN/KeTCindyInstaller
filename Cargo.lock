@@ -512,6 +512,7 @@ dependencies = [
  "clap",
  "reqwest",
  "strum",
+ "tokio",
  "toml",
 ]
 
