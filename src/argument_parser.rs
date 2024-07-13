@@ -1,16 +1,14 @@
 use clap::Parser;
-use clap::Subcommand;
-use clap::ValueEnum;
 
-#[derive(Parser)]
+#[derive(clap::Parser)]
 #[command(name = "KeTCindyInstaller", version, about)]
 pub struct Arguments {
     #[command(subcommand)]
-    subcommand: Subcommands
+    pub subcommand: Subcommand
 }
 
-#[derive(Subcommand)]
-enum Subcommands {
+#[derive(clap::Subcommand)]
+pub enum Subcommand {
     /// Install KeTCindy and related packages
     Install {
         #[arg(long)]
@@ -19,12 +17,12 @@ enum Subcommands {
 
         #[arg(value_enum, required = true)]
         /// Install a package or a list of packages
-        package: Vec<Packages>,
+        packages: Vec<Package>,
     }
 }
 
-#[derive(ValueEnum, Clone)]
-enum Packages {
+#[derive(clap::ValueEnum, Clone)]
+pub enum Package {
     /// KeTCindy (https://github.com/ketpic/ketcindy)
     Ketcindy,
 }
