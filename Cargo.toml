@@ -12,4 +12,5 @@ path = "src/main.rs"
 [dependencies]
 clap = { version = "4.5.9", features = ["derive"] }
 reqwest = "0.12.5"
+strum = "0.26.3"
 toml = "0.8.14"
