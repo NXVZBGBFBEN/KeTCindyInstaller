@@ -3,14 +3,14 @@ use serde::Deserialize;
 
 #[derive(Deserialize, Debug)]
 pub struct Manifest {
-    package: Package
+    pub package: Package
 }
 
 #[derive(Deserialize, Debug)]
 pub struct Package {
-    name: String,
-    version: String,
-    url: String
+    pub name: String,
+    pub version: String,
+    pub url: String
 }
 
 pub async fn parse_manifest(package_name: String) -> Result<Manifest> {

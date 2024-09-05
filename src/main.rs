@@ -10,7 +10,7 @@ async fn main() -> Result<()> {
         Subcommand::Install { nodeps: _, packages } => {
             for package in packages {
                 let manifest = parse_manifest(package.to_string()).await?;
-                println!("{:?}", manifest);
+                println!("{:?}", manifest.package.url);
             }
         }
     }
