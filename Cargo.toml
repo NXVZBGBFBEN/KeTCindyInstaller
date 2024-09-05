@@ -10,8 +10,10 @@ name = "ketpm"
 path = "src/main.rs"
 
 [dependencies]
+anyhow = "1.0.86"
 clap = { version = "4.5.9", features = ["derive"] }
 reqwest = "0.12.5"
+serde = { version = "1.0.209", features = ["derive"] }
 strum = { version = "0.26.3", features = ["derive"] }
 tokio = { version = "1.38.0", features = ["full"] }
 toml = "0.8.14"

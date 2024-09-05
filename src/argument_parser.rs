@@ -21,7 +21,8 @@ pub enum Subcommand {
     }
 }
 
-#[derive(clap::ValueEnum, Clone)]
+#[derive(clap::ValueEnum, strum::Display, Clone)]
+#[strum(serialize_all = "lowercase")]
 pub enum Package {
     /// KeTCindy (https://github.com/ketpic/ketcindy)
     Ketcindy,
