@@ -1,6 +1,6 @@
 use ketcindyinstaller::argument_parser;
 use ketcindyinstaller::argument_parser::Subcommand;
-use ketcindyinstaller::manifest_parser::parse_manifest;
+use ketcindyinstaller::package_manager::download_package;
 use anyhow::Result;
 
 #[tokio::main]
@@ -9,8 +9,8 @@ async fn main() -> Result<()> {
     match argument.subcommand {
         Subcommand::Install { nodeps: _, packages } => {
             for package in packages {
-                let manifest = parse_manifest(package.to_string()).await?;
-                println!("{:?}", manifest.package.url);
+                let manifest = download_package(package.to_string()).await?;
+                println!("{:?}", manifest);
             }
         }
     }

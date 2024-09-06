@@ -12,6 +12,8 @@ path = "src/main.rs"
 [dependencies]
 anyhow = "1.0.86"
 clap = { version = "4.5.9", features = ["derive"] }
+directories = "5.0.1"
+indicatif = "0.17.8"
 platform-dirs = "0.3.0"
 reqwest = "0.12.5"
 serde = { version = "1.0.209", features = ["derive"] }
