@@ -14,7 +14,7 @@ pub struct Package {
 }
 
 pub async fn parse_manifest(package_name: String) -> Result<Manifest> {
-    let raw_manifest = reqwest::get(format!("https://raw.githubusercontent.com/NXVZBGBFBEN/KeTCindyInstaller/main/manifests/{package_name}.toml"))
+    let raw_manifest = reqwest::get(format!("https://raw.githubusercontent.com/NXVZBGBFBEN/KeTCindyInstaller/manifests/manifests/{package_name}.toml"))
         .await?
         .text()
         .await?;
