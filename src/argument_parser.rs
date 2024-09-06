@@ -29,5 +29,5 @@ pub enum Package {
 }
 
 pub fn parse_argument() -> Argument {
-    return Argument::parse();
+    Argument::parse()
 }
