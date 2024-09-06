@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cargo test
+cargo clippy
+cargo fmt
