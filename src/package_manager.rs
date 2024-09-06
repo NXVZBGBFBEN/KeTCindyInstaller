@@ -1,27 +1,31 @@
-use std::{io::Write, time::Duration};
-use std::path::Path;
-use std::fs;
 use anyhow::{Context, Result};
-use serde::Deserialize;
 use indicatif::ProgressBar;
+use serde::Deserialize;
+use std::fs;
+use std::path::Path;
+use std::{io::Write, time::Duration};
 
 #[derive(Deserialize, Debug)]
 pub struct Manifest {
-    pub package: Package
+    pub package: Package,
 }
 
 #[derive(Deserialize, Debug)]
 pub struct Package {
     pub name: String,
     pub version: String,
-    pub url: String
+    pub url: String,
 }
 
 pub async fn download_package(package_name: String, download_location: &Path) -> Result<()> {
     let manifest = fetch_manifest(package_name).await?;
-    let package_file_location = download_location.join(url::Url::parse(&manifest.package.url)?
-        .path_segments().context("Failed to parse package URL.")?
-        .last().context("Failed to parse package URL.")?);
+    let package_file_location = download_location.join(
+        url::Url::parse(&manifest.package.url)?
+            .path_segments()
+            .context("Failed to parse package URL.")?
+            .last()
+            .context("Failed to parse package URL.")?,
+    );
     let spinner = ProgressBar::new_spinner().with_message("Downloading package...");
 
     spinner.enable_steady_tick(Duration::from_millis(75));

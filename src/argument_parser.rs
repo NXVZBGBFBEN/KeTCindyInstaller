@@ -4,7 +4,7 @@ use clap::Parser;
 #[command(name = "KeTCindyInstaller", version, about)]
 pub struct Argument {
     #[command(subcommand)]
-    pub subcommand: Subcommand
+    pub subcommand: Subcommand,
 }
 
 #[derive(clap::Subcommand)]
@@ -18,7 +18,7 @@ pub enum Subcommand {
         #[arg(value_enum, required = true)]
         /// Install a package or a list of packages
         packages: Vec<Package>,
-    }
+    },
 }
 
 #[derive(clap::ValueEnum, strum::Display, Clone)]
