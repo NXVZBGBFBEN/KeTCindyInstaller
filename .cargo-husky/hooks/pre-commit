@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cargo clippy -D warnings
+cargo clippy -- -D warnings
 cargo fmt
 cargo test
