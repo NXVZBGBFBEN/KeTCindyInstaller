@@ -1,8 +1,10 @@
 pre-commit:
+  piped: true
   commands:
-    lint:
+    1_lint:
       glob: "*.rs"
       run: cargo clippy -- -D warnings
-    format:
+    2_format:
       glob: "*.rs"
       run: cargo fmt
+      stage_fixed: true
