@@ -1,4 +1,6 @@
 [package]
 name = "ketcindy"
-version = "4.4.85"
-url = "https://github.com/ketpic/ketcindy/archive/refs/tags/4.4.85.zip"
+version = "4.4.94"
+
+[package.target.universal]
+url = "https://github.com/ketpic/ketcindy/archive/refs/tags/4.4.94.zip"
