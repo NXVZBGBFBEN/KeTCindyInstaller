@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    lint:
+      glob: "*.rs"
+      run: cargo clippy -- -D warnings
+    format:
+      glob: "*.rs"
+      run: cargo fmt
