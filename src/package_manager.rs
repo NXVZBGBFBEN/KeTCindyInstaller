@@ -6,10 +6,28 @@ use std::{io::Write, time::Duration};
 
 pub async fn download_package(package_name: String, download_location: &Path) -> Result<()> {
     let manifest = crate::manifest_manager::fetch_manifest(package_name).await?;
-    let package_metadata = if let Some(metadata) = manifest.package.target.universal {
-        metadata
+    let package_metadata = if let Some(universal_metadata) = manifest.package.target.universal {
+        universal_metadata
+    } else if cfg!(all(target_arch = "x86_64", target_os = "windows")) {
+        manifest
+            .package
+            .target
+            .amd64_windows
+            .context("Manifest format is invalid.")?
+    } else if cfg!(all(target_arch = "aarch64", target_os = "macos")) {
+        manifest
+            .package
+            .target
+            .arm64_macos
+            .context("Manifest format is invalid.")?
+    } else if cfg!(all(target_arch = "x86_64", target_os = "macos")) {
+        manifest
+            .package
+            .target
+            .amd64_macos
+            .context("Manifest format is invalid.")?
     } else {
-        todo!("parse metadata (OS, arch)")
+        unreachable!("This feature is not available in this build");
     };
     let package_file_location = download_location.join(
         url::Url::parse(&package_metadata.url)?

@@ -20,6 +20,9 @@ pub(crate) struct Package {
 #[derive(Deserialize, Debug)]
 pub(crate) struct PackageTarget {
     pub(crate) universal: Option<PackageMetadata>,
+    pub(crate) amd64_windows: Option<PackageMetadata>,
+    pub(crate) arm64_macos: Option<PackageMetadata>,
+    pub(crate) amd64_macos: Option<PackageMetadata>,
 }
 
 #[derive(Deserialize, Debug)]
