@@ -1,0 +1,13 @@
+[package]
+name = "cinderella"
+version = "2087"
+
+[package.target.amd64_windows]
+url = "https://beta.cinderella.de/Cinderella-3.0b.2087-64bit.exe"
+
+[package.target.arm64_macos]
+url = "https://beta.cinderella.de/Cinderella-3.0b.2087.dmg"
+
+[package.target.amd64_macos]
+url = "https://beta.cinderella.de/Cinderella-3.0b.2087.dmg"
+
