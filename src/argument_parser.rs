@@ -26,6 +26,8 @@ pub enum Subcommand {
 pub enum Package {
     /// KeTCindy (https://github.com/ketpic/ketcindy)
     Ketcindy,
+    /// R (https://cran.r-project.org/)
+    R,
 }
 
 pub fn parse_argument() -> Argument {
