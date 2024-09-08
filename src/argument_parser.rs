@@ -26,6 +26,8 @@ pub enum Subcommand {
 pub enum Package {
     /// KeTCindy (https://github.com/ketpic/ketcindy)
     Ketcindy,
+    /// Cinderella (https://cinderella.de/)
+    Cinderella,
     /// R (https://cran.r-project.org/)
     R,
 }
