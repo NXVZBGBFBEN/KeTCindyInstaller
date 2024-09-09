@@ -5,8 +5,8 @@ use std::fs;
 use std::path::Path;
 use std::{io::Write, time::Duration};
 
-pub async fn download_package(package_name: String, download_location: &Path) -> Result<()> {
-    if cfg!(all(target_arch = "aarch64", target_os = "macos")) && package_name == *"maxima" {
+pub async fn download_package(package_name: &str, download_location: &Path) -> Result<()> {
+    if cfg!(all(target_arch = "aarch64", target_os = "macos")) && package_name == "maxima" {
         eprintln!(
             "installation of package \"maxima\" is not supported in this cpu architecture (arm64)."
         );

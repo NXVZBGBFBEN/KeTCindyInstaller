@@ -22,7 +22,7 @@ async fn main() -> Result<()> {
                     .cache_dir()
                     .join("packages")
                     .join(package.to_string());
-                download_package(package.to_string(), &download_location).await?;
+                download_package(&package.to_string(), &download_location).await?;
             }
         }
     }

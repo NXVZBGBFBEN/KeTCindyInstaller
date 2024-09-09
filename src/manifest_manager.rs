@@ -31,7 +31,7 @@ pub(crate) struct PackageMetadata {
 }
 
 impl Manifest {
-    pub(crate) async fn fetch(package_name: String) -> Result<Self> {
+    pub(crate) async fn fetch(package_name: &str) -> Result<Self> {
         let spinner = ProgressBar::new_spinner().with_message("Fetching manifest...");
 
         spinner.enable_steady_tick(Duration::from_millis(75));
