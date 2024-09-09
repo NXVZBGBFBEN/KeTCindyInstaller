@@ -1,3 +1,4 @@
+use crate::manifest_manager::Manifest;
 use anyhow::{Context, Result};
 use indicatif::ProgressBar;
 use std::fs;
@@ -13,7 +14,7 @@ pub async fn download_package(package_name: String, download_location: &Path) ->
         return Ok(());
     }
 
-    let manifest = crate::manifest_manager::fetch_manifest(package_name).await?;
+    let manifest = Manifest::fetch(package_name).await?;
     let package_metadata = if let Some(universal_metadata) = manifest.package.target.universal {
         universal_metadata
     } else if cfg!(all(target_arch = "x86_64", target_os = "windows")) {
