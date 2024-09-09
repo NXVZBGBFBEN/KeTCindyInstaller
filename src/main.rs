@@ -1,5 +1,6 @@
 use anyhow::{Context, Result};
-use ketcindyinstaller::argument_parser;
+use clap::Parser;
+use ketcindyinstaller::argument_parser::Argument;
 use ketcindyinstaller::argument_parser::Subcommand;
 use ketcindyinstaller::package_manager::download_package;
 
@@ -10,7 +11,7 @@ async fn main() -> Result<()> {
             "No valid home directory path could be retrieved from the operating system.",
         )?;
 
-    let argument = argument_parser::parse_argument();
+    let argument = Argument::parse();
     match argument.subcommand {
         Subcommand::Install {
             nodeps: _,

@@ -1,5 +1,3 @@
-use clap::Parser;
-
 #[derive(clap::Parser)]
 #[command(name = "KeTCindyInstaller", version, about)]
 pub struct Argument {
@@ -32,8 +30,4 @@ pub enum Package {
     Maxima,
     /// R (https://cran.r-project.org/)
     R,
-}
-
-pub fn parse_argument() -> Argument {
-    Argument::parse()
 }
