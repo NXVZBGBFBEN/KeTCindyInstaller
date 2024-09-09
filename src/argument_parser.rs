@@ -28,6 +28,8 @@ pub enum Package {
     Ketcindy,
     /// Cinderella (https://cinderella.de/)
     Cinderella,
+    /// Maxima (https://maxima.sourceforge.io/)
+    Maxima,
     /// R (https://cran.r-project.org/)
     R,
 }
