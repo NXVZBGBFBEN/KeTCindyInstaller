@@ -1,0 +1,10 @@
+[package]
+name = "maxima"
+version = "5.43.0"
+
+[package.target.amd64_windows]
+url = "https://sourceforge.net/projects/maxima/files/Maxima-Windows/5.43.0-Windows/maxima-clisp-sbcl-5.43.0-win64.exe"
+
+[package.target.amd64_macos]
+url = "https://sourceforge.net/projects/maxima/files/Maxima-MacOS/5.43.0-MacOSX/Maxima-5.43.0-VTK-macOS.dmg"
+
