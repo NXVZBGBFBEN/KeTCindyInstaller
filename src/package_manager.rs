@@ -5,6 +5,14 @@ use std::path::Path;
 use std::{io::Write, time::Duration};
 
 pub async fn download_package(package_name: String, download_location: &Path) -> Result<()> {
+    if cfg!(all(target_arch = "aarch64", target_os = "macos")) && package_name == *"maxima" {
+        eprintln!(
+            "installation of package \"maxima\" is not supported in this cpu architecture (arm64)."
+        );
+        eprintln!("Please install with Homebrew: `brew install maxima`.");
+        return Ok(());
+    }
+
     let manifest = crate::manifest_manager::fetch_manifest(package_name).await?;
     let package_metadata = if let Some(universal_metadata) = manifest.package.target.universal {
         universal_metadata
