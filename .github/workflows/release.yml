@@ -1,0 +1,58 @@
+name: release
+
+on:
+  push:
+    tags: "v*"
+  workflow_dispatch:
+
+jobs:
+  release:
+    strategy:
+      matrix:
+        platform:
+          - release_for: x86_64-windows
+            os: windows-latest
+            target: x86_64-pc-windows-msvc
+            bin: ketpm.exe
+            name: ketcindyinstaller-x86_64-windows.zip
+
+          - release_for: x86_64-macos
+            os: macOS-latest
+            target: x86_64-apple-darwin
+            bin: ketpm
+            name: ketcindyinstaller-x86_64-macos.tar.gz
+
+          - release_for: aarch64-macos
+            os: macOS-latest
+            target: aarch64-apple-darwin
+            bin: ketpm
+            name: ketcindyinstaller-aarch64-macos.tar.gz
+    runs-on: ${{ matrix.platform.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build binary
+        uses: houseabsolute/actions-rust-cross@v0
+        with:
+          command: build
+          target: ${{ matrix.platform.target }}
+          args: "--locked --release"
+          strip: true
+
+      - name: Package as archive
+        shell: bash
+        run: |
+          cd target/${{ matrix.platform.target }}/release
+          if [[ "${{ matrix.platform.os }}" == "windows-latest" ]]; then
+            7z a ../../../${{ matrix.platform.name }} ${{ matrix.platform.bin }}
+          else
+            tar czvf ../../../${{ matrix.platform.name }} ${{ matrix.platform.bin }}
+          fi
+          cd -
+
+      - name: Publish GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          files: "ketcindyinstaller-*"
