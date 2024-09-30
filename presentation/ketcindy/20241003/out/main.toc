@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{KeTCindyについて}{2}{0}{1}
+\beamer@sectionintoc {2}{概要}{4}{0}{2}

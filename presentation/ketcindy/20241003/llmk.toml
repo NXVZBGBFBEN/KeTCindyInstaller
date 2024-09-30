@@ -1,0 +1,2 @@
+source = "main.tex"
+output_directory = "out"
