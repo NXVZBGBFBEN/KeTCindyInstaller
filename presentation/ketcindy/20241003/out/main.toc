@@ -1,2 +1,3 @@
-\beamer@sectionintoc {1}{KeTCindyについて}{2}{0}{1}
-\beamer@sectionintoc {2}{概要}{4}{0}{2}
+\beamer@sectionintoc {1}{はじめに}{2}{0}{1}
+\beamer@sectionintoc {2}{開発について}{5}{0}{2}
+\beamer@sectionintoc {3}{さいごに}{17}{0}{3}

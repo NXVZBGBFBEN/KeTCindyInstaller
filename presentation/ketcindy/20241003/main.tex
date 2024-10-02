@@ -1,16 +1,36 @@
-\documentclass[unicode,12pt]{beamer}
+\documentclass[
+    t,
+    allowframebreaks,
+    aspectratio=32,
+    unicode
+]{beamer}
 
 \usepackage{luatexja}
 \usepackage[no-math,deluxe,expert,haranoaji]{luatexja-preset}
 
+\newcommand{\lf}{\vspace{\baselineskip}}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\footnotesize}{\tiny}
 
-\usetheme{moloch}
+\usetheme[
+    progressbar=frametitle,
+    block=fill
+]{moloch}
+
 \usefonttheme{professionalfonts}
 \setmonofont{inconsolatazi4}
-\setsansfont[BoldFont={HaranoAjiGothic-Bold}]{HaranoAjiGothic-Normal}
-\setbeamertemplate{frametitle continuation}{}
+
+\setbeamertemplate{frametitle continuation}[from second][（続き）]
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+\makeatletter
+\setlength{\moloch@titleseparator@linewidth}{1.5pt}
+\setlength{\moloch@progressonsectionpage@linewidth}{1.5pt}
+\setlength{\moloch@progressinheadfoot@linewidth}{1.5pt}
+\makeatother
+
+\setbeameroption{show notes on second screen}
 
 \title{KeTCindyInstaller}
 \subtitle{KeTCindy用パッケージマネージャの開発}
@@ -20,19 +40,142 @@
 
 \begin{document}
     \maketitle
-    % 本番時は消す
-    \section{KeTCindyについて}
-    \begin{frame}[t]
-        \frametitle{KeTCindyとは？}
-        test
-    \end{frame}
-    \section{概要}
-    \begin{frame}[t]
-        \frametitle{概要}
+    \note{これから発表を始めます．よろしくお願いします．}
+
+    \section{はじめに}
+    \note{まずはじめに，自己紹介をさせていただきたいと思います．}
+    \begin{frame}{\secname}{自己紹介}
+        秋本蒼空(AKIMOTO Sora)
+
+        \begin{table}[h]
+            \centering
+            \begin{tabular}{c|l}
+                所属 & 木更津工業高等専門学校 情報工学科 \\
+                部活動・同好会 & プログラミング研究同好会 会長 \\
+                好きな技術 & Lua\LaTeX，Vim，Rust，Gentoo Linux \\
+                最近興味のある分野 & セキュリティ，インフラ・ネットワーク系 \\
+                Website & \url{https://nxvzbgbfben.pages.dev/}
+            \end{tabular}
+        \end{table}\pause
+
+        \lf
+        KeTCindyプロジェクトには2023年2月頃参加
+
         \begin{itemize}
-            \item a
-            \item b
-            \item c
+            \item KeTCindyスタートブック
+            \item KeTLMSの課題一斉送信スクリプト（開発中）
+            \item \alert{KeTCindyInstaller（開発中）}
         \end{itemize}
+        \note<1>{木更津高専 情報工学科3年の秋本蒼空と申します．\\
+        今年度からプログラミング研究同好会の会長を務めさせていただいております．\\
+        個人的に好きな技術についてはLua\LaTeX，エディタのVim，プログラミング言語のRust，OSのGentooなどがあります．\\
+        最近はセキュリティに興味があってCTFに出場することが多いです．インフラやネットワーク系の方にも興味があって，
+        この夏休みはインフラ系の企業のインターンに参加しました．}
+        \note<2>{KeTCindyプロジェクトには2023年の2月頃から参加させていただいております．\\
+        KeTCindyのインストール方法を解説した「KeTCindyスタートブック」であったり，\\
+        KeTLMSの課題を学生に一斉送信するスクリプトであったり，今回ご説明させていただくKeTCindyInstallerを開発しています．}
+    \end{frame}
+
+    \section{開発について}
+    \note{次に，開発についてご説明させていただきます．}
+    \begin{frame}{\secname}{概要}
+        KeTCindyは環境構築が大変\\
+        →Windows・Mac共通のインストーラがあると便利\pause
+
+        \lf
+        KeTCindyInstaller\\
+        (\url{https://github.com/NXVZBGBFBEN/KeTCindyInstaller})
+
+        \begin{itemize}
+            \item KeTCindyと関連ソフトウェアをセットアップ
+            \item クロスプラットフォームで動作（Windows・Mac対応）
+            \item CLIアプリケーション→自動化が容易
+        \end{itemize}\pause
+
+        \lf
+        現状インストール機能の実現を目指して開発中だが，
+        将来的にはパッケージのアップデートやアンインストールにも対応させたい
+        \note<1>{KeTCindyは環境構築が大変であるという現状を踏まえ，WindowsおよびMacOS共通のインストーラがあると便利だと思っています．}
+        \note<2>{そこで，KeTCindyInstallerの開発を開始しました．\\
+        KeTCindyと，RやMaximaなどの関連ソフトウェアをセットアップできるアプリケーションを目指しており，\\
+        クロスプラットフォームで動作することを強みにしたいと考えています．\\
+        また，コマンドラインで動作するアプリケーションなので，シェルスクリプトからの呼び出しなど，自動化が容易であるという特徴も備えています．}
+        \note<3>{現状ではまずパッケージのインストールができるように開発を進めていますが，\\
+        最終的にはアップデートやアンインストールといった，一種のパッケージマネージャとして成長させていきたいと考えています．}
+    \end{frame}
+    \begin{frame}{\secname}{設計}
+        開発言語にはRustを採用
+        \begin{itemize}
+            \item パフォーマンスに優れる
+            \item クロスプラットフォームで動作
+            \item 開発者の負担が少ない
+            \item バイナリ単体で動作
+        \end{itemize}\pause
+
+        \lf
+        できる限り依存関係は少なくしたい
+        \begin{itemize}
+            \item[→] ライブラリを静的リンクしてコンパイル
+                \begin{itemize}
+                    \item[→] Windowsでありがちな「VC++ランタイムがない」を回避
+                \end{itemize}
+        \end{itemize}\pause
+
+        \lf
+        パッケージ情報は別ファイル（マニフェスト）で管理
+        \begin{itemize}
+            \item[→] プログラム自体を更新しなくてもパッケージの更新に追従可
+        \end{itemize}
+    \end{frame}
+    \begin{frame}{\secname}{開発環境}
+        ソースコードのバージョン管理にはGit(GitHub)を使用
+        \begin{itemize}
+            \item lefthookを用いてpre-commitチェック
+            \item GitHub Pages・GitHub Actionsを用いてドキュメンテーションを自動化
+            \item GitHub Actionsを用いた自動ビルド・リリース準備
+        \end{itemize}\pause
+
+        \lf
+        Rustのエコシステムを活用して自動化
+        \begin{itemize}
+            \item Rustdocを用いたドキュメンテーション
+            \item rust-analyzerとClippyを用いたformat・lint
+        \end{itemize}\pause
+
+        \lf
+        共同開発も視野に入れ環境を構築中
+    \end{frame}
+    \begin{frame}[fragile]{\secname}{開発状況と今後の展望}
+        現在，マニフェストのパースとパッケージのダウンロードまで完成\\
+        v1.0.0-alpha.1としてGitHubで公開中\pause
+
+        \lf
+        今後の課題
+        \begin{itemize}
+            \item ドキュメント(\verb|README.md|)の作成
+            \item ライブラリを静的リンクするように変更(GitHub Actions)
+            \item パッケージのインストール
+                \begin{itemize}
+                    \item OSに強く依存する部分
+                \end{itemize}
+            \item パッケージのアップデート
+            \item パッケージのアンインストール
+            \item \verb|ketcindysettings.cdy|の処理内容サポート
+        \end{itemize}
+    \end{frame}
+
+    \section{さいごに}
+    \begin{frame}{\secname}{今後について}
+        KeTCindyInstallerは現状Windows上で開発されている\\
+        MacOSでの動作確認を進めたい\pause
+
+        \lf
+        KeTCindyはCinderellaを用いて高度な処理ができる\\
+        より導入しやすい環境を作ることで発展に貢献していきたい
+    \end{frame}
+
+    \begin{frame}[standout]
+        ありがとうございました
+        \note{以上で発表を終わります．ありがとうございました．}
     \end{frame}
 \end{document}

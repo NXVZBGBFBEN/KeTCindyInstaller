@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.9.26)  27 SEP 2024 12:24
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.9.26)  3 OCT 2024 03:51
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -201,8 +201,8 @@ ithmetics.code.tex)
 (e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count292
 )))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+(e:/PGM/texlive/2024/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
 luaotfload | db : Font names database loaded from C:/Users/NXVZBGBFBEN/.texlive2
 024/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
 (e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
@@ -832,7 +832,7 @@ Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
 Inserting `ltj.prepare_extra_data' in `luatexja.define_font'.(load cache: extra_
-lmroman12-regular.luc)(load cache: extra_lmsans12-regular.luc)
+lmroman10-regular.luc)(load cache: extra_lmsans10-regular.luc)
 Inserting `ltj.get_vert_form' in `luatexja.define_jfont'.
 Removing  `ltj.prepare_extra_data' from `luaotfload.patch_font'.
 Removing  `luaotfload.aux.set_sscale_dimens' from `luaotfload.patch_font'.
@@ -975,7 +975,6 @@ LaTeX Info: Redefining \fontshapeforce on input line 789.
 )
 (e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
 Package: lltjdefs 2024-05-16 Default font settings of LuaTeX-ja
-(load cache: extra_lmsans10-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 9.6222pt on input line 69.
 
@@ -1084,20 +1083,20 @@ LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 9.6222pt on input line 116.
 )
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 439.
+(Font)              scaled to size 10.53629pt on input line 439.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 439.
+(Font)              scaled to size 10.53629pt on input line 439.
 
 (e:/PGM/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load cache: ext
 ra_lmsans10-bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <12> not available
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10.95> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 3978.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 3978.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <12> not available
+(Font)              scaled to size 10.53629pt on input line 3978.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10.95> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 3978.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 3978.
+(Font)              scaled to size 10.53629pt on input line 3978.
 (load cache: extra_haranoajigothic-medium.luc)))
 (e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty)
 (e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec-29
@@ -1171,10 +1170,10 @@ LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 iMincho-Regular.otf(0)/b/n on input line 734.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 11.54663pt on input line 734.
+(Font)              scaled to size 10.53629pt on input line 734.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 11.54663pt on input line 734.
+(Font)              scaled to size 10.53629pt on input line 734.
 (load cache: extra_haranoajigothic-regular.luc)
 
 Package fontspec Info: 
@@ -1427,99 +1426,57 @@ flt;"
 
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 11.54663pt on input line 12.
+(Font)              scaled to size 10.53629pt on input line 23.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 11.54663pt on input line 12.
-(load cache: extra_haranoajigothic-normal.luc)
+(Font)              scaled to size 10.53629pt on input line 23.
+ (e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2011/01/05 ver 0.02
+\pgf@logicalpages=\count378
+\pgf@firstshipout=\count379
+\pgf@lastshipout=\count380
+\pgf@currentshipout=\count381
+\pgf@cpn=\count382
+\pgf@shipoutnextto=\count383
+\pgfphysicalheight=\dimen331
+\pgfphysicalwidth=\dimen332
+\pgfpages@shipoutbox=\box100
+)
+\pgfpages@box@1=\box101
+\pgfpages@box@2=\box102
 
-Package fontspec Info: 
-(fontspec)             Could not resolve font "HaranoAjiGothic-Bold/I" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "HaranoAjiGothic-Normal/BI" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "HaranoAjiGothic-Normal/I" (it
-(fontspec)             probably doesn't exist).
-
-luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 53 (nil) does not define feature smcp for script dflt
- with language dflt
-luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 53 (nil) does not define feature smcp for script dflt
- with language dflt
-luaotfload | aux : font no 54 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 54 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 54 (nil) does not define feature smcp for script dflt
- with language dflt
-luaotfload | aux : font no 54 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 54 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 54 (nil) does not define feature smcp for script dflt
- with language dflt
-
-Package fontspec Info: 
-(fontspec)             Font family 'HaranoAjiGothic-Normal(0)' created for
-(fontspec)             font 'HaranoAjiGothic-Normal' with options
-(fontspec)             [Ligatures=TeX,BoldFont={HaranoAjiGothic-Bold}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"name:HaranoAjiGothic-Normal:mode=node;script=latn;la
-nguage=dflt;+tlig;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"name:HaranoAjiGothic-Bold:mode=node;script=latn;lang
-uage=dflt;+tlig;"
-
- (./out/main.aux)
+(./out/main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 2
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 4
 1.
-
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
+ (e:/PGM/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1529,23 +1486,23 @@ LaTeX Font Info:    ... okay on input line 21.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
-* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
-* \paperwidth=364.19536pt
-* \paperheight=273.14662pt
-* \textwidth=307.28987pt
-* \textheight=244.6939pt
+* h-part:(L,W,R)=(28.45274pt, 327.20671pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 256.0748pt, 0.0pt)
+* \paperwidth=384.1122pt
+* \paperheight=256.0748pt
+* \textwidth=327.20671pt
+* \textheight=227.62207pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=14.22636pt
 * \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1557,16 +1514,16 @@ LaTeX Font Info:    ... okay on input line 21.
 
 (e:/PGM/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count378
-\scratchdimen=\dimen331
-\scratchbox=\box100
-\nofMPsegments=\count379
-\nofMParguments=\count380
+\scratchcounter=\count384
+\scratchdimen=\dimen333
+\scratchbox=\box103
+\nofMPsegments=\count385
+\nofMParguments=\count386
 \everyMPshowfont=\toks60
-\MPscratchCnt=\count381
-\MPscratchDim=\dimen332
-\MPnumerator=\count382
-\makeMPintoPDFobject=\count383
+\MPscratchCnt=\count387
+\MPscratchDim=\dimen334
+\MPnumerator=\count388
+\makeMPintoPDFobject=\count389
 \everyMPtoPDFconversion=\toks61
 ) (e:/PGM/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1577,7 +1534,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 41.
 
 (./out/main.out) (./out/main.out)
 \@outlinefile=\write5
@@ -1607,55 +1564,60 @@ Dictionary: translator-numbers-dictionary, Language: English
 (e:/PGM/texlive/2024/texmf-dist/tex/latex/translator/translator-theorem-diction
 ary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./out/main.nav)
+) (./out/main.nav)(load cache: extra_lmsans8-regular.luc)
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 5.77332pt on input line 21.
+(Font)              scaled to size 5.77332pt on input line 41.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 5.77332pt on input line 21.
+(Font)              scaled to size 5.77332pt on input line 41.
+(load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 16.62714pt on input line 22.
+(Font)              scaled to size 13.85594pt on input line 42.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 16.62714pt on input line 22.
+(Font)              scaled to size 13.85594pt on input line 42.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 16.62714pt on input line 22.
+(Font)              scaled to size 13.85594pt on input line 42.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 16.62714pt on input line 22.
+(Font)              scaled to size 13.85594pt on input line 42.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 13.85594pt on input line 22.
+(Font)              scaled to size 11.54663pt on input line 42.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 13.85594pt on input line 22.
+(Font)              scaled to size 11.54663pt on input line 42.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 10.53629pt on input line 22.
+(Font)              scaled to size 9.6222pt on input line 42.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 10.53629pt on input line 22.
+(Font)              scaled to size 9.6222pt on input line 42.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 7.69775pt on input line 22.
+(Font)              scaled to size 7.69775pt on input line 42.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 7.69775pt on input line 22.
+(Font)              scaled to size 7.69775pt on input line 42.
+
+Overfull \vbox (5.69046pt too high) detected at line 42
+ []
 
 
-[1
 
-{e:/PGM/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying loading font information for U+msa on input line 24.
 
+
+
+
+LaTeX Font Info:    Trying loading font information for U+msa on input line 45.
 
 (e:/PGM/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying loading font information for U+msb on input line 24.
+LaTeX Font Info:    Trying loading font information for U+msb on input line 45.
 
 
 (e:/PGM/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1663,40 +1625,278 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 7.69775pt on input line 24.
+(Font)              scaled to size 7.69775pt on input line 45.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 5.77332pt on input line 24.
+(Font)              scaled to size 5.77332pt on input line 45.
 
 
 [2
 
+{e:/PGM/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+
 ]
+
+
+
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 13.85594pt on input line 28.
+(Font)              scaled to size 11.54663pt on input line 77.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 13.85594pt on input line 28.
+(Font)              scaled to size 11.54663pt on input line 77.
+LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
+
+(Font)              scaled to size 9.6222pt on input line 77.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
+
+(Font)              scaled to size 9.6222pt on input line 77.
 
 
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 3.84888pt on input line 28.
+(Font)              scaled to size 3.84888pt on input line 77.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 3.84888pt on input line 28.
+(Font)              scaled to size 3.84888pt on input line 77.
 [3
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+
 ]
+LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 9.6222pt on input line 77.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 6.73553pt on input line 77.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 4.8111pt on input line 77.
+LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 6.73553pt on input line 77.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 6.73553pt on input line 77.
+
+
+
 
 [4
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+
 ]
+
+
 
 [5
 
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+
 ]
+
+
+
+
+
+[6
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+
+]
+
+
+
+[7
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+
+]
+
+
+
+[8
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
+
+]
+
+
+
+[9
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
+
+]
+
+
+
+[10
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+9'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
+
+]
+
+
+
+[11
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+10'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
+
+]
+
+
+
+[12
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+11'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
+
+]
+
+
+
+[13
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+12'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
+
+]
+
+
+
+[14
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+13'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
+
+]
+
+
+\openout4 = main.vrb
+(./out/main.vrb)
+
+[15
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+14'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
+
+]
+
+(./out/main.vrb)
+
+[16
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+15'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
+
+]
+
+
+
+[17
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+16'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
+
+]
+
+
+
+[18
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+17'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
+
+]
+
+
+
+[19
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+18'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
+
+]
+
+
+
+[20
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+19'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
+
+]
+
 \tf@nav=\write6
 
 \openout6 = main.nav
@@ -1706,35 +1906,49 @@ LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 \tf@snm=\write8
 
 \openout8 = main.snm
- (./out/main.aux)
+[21
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+20'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
+
+] (./out/main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D0156BDF330BDB66F4BB5057F1BF5F8D;174.
+(rerunfilecheck)             Checksum: 9048EC5956F1DF22423D98593E452117;241.
 )
 
 Here is how much of LuaTeX's memory you used:
- 29925 strings out of 475910
- 125244,1373583 words of node,token memory allocated
- 5925 words of node memory still in use:
-   36 hlist, 8 vlist, 9 rule, 4 local_par, 6 math, 58 glue, 9 kern, 21 penalty, 
-9 glyph, 1846 attribute, 67 glue_spec, 204 attribute_list, 4 write, 43 user_defi
-ned, 30 pdf_colorstack nodes
-   avail lists: 1:21,2:2910,3:186,4:302,5:70,6:27,7:697,8:1,9:336,10:12,11:4
- 51608 multiletter control sequences out of 65536+600000
- 91 fonts using 180637791 bytes
- 128i,13n,137p,1888b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-
-Regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji-extr
-a/HaranoAjiGothic-Normal.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/publ
-ic/haranoaji/HaranoAjiGothic-Bold.otf><e:/PGM/texlive/2024/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (5 pages, 26988 bytes).
+ 30335 strings out of 475910
+ 156564,1373583 words of node,token memory allocated
+ 13706 words of node memory still in use:
+   63 hlist, 22 vlist, 57 rule, 3 disc, 7 local_par, 148 glue, 14 kern, 29 penal
+ty, 81 glyph, 4363 attribute, 68 glue_spec, 446 attribute_list, 6 write, 76 user
+_defined, 31 pdf_literal, 2 pdf_start_link, 2 pdf_end_link, 2 pdf_dest, 2 pdf_ac
+tion, 25 pdf_colorstack nodes
+   avail lists: 1:36,2:39233,3:747,4:1093,5:192,6:88,7:4598,8:48,9:1873,10:30,11
+:46
+ 51970 multiletter control sequences out of 65536+600000
+ 109 fonts using 145147239 bytes
+ 128i,13n,137p,1888b,944s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/inconsolata/Inconsolatazi4
+-Regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/Har
+anoAjiGothic-Bold.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/lm/l
+msans10-regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/lm/lms
+ans8-regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji
+/HaranoAjiGothic-Regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/publ
+ic/lm/lmsans12-regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public
+/lm/lmsans10-bold.otf><e:/PGM/texlive/2024/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb>
+Output written on main.pdf (20 pages, 122939 bytes).
 
-PDF statistics: 81 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 131072)
- 32 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 291 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 131072)
+ 40 words of extra memory for PDF output out of 10000 (max. 100000000)
 

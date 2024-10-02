@@ -1,0 +1,16 @@
+\frametitle{\secname }\framesubtitle {開発状況と今後の展望}        現在，マニフェストのパースとパッケージのダウンロードまで完成\\
+        v1.0.0-alpha.1としてGitHubで公開中\pause
+
+        \lf
+        今後の課題
+        \begin{itemize}
+            \item ドキュメント(\verb|README.md|)の作成
+            \item ライブラリを静的リンクするように変更(GitHub Actions)
+            \item パッケージのインストール
+                \begin{itemize}
+                    \item OSに強く依存する部分
+                \end{itemize}
+            \item パッケージのアップデート
+            \item パッケージのアンインストール
+            \item \verb|ketcindysettings.cdy|の処理内容サポート
+        \end{itemize}
