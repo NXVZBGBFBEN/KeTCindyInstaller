@@ -1,28 +1,28 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.9.26)  3 OCT 2024 03:51
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.1.15)  3 OCT 2024 09:05
  restricted system commands enabled.
  file:line:error style messages enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
-Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
+LaTeX2e <2023-11-01>
+L3 programming layer <2024-01-04>
+Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
 ollection.
-luaotfload | conf : Root cache directory is "C:/Users/NXVZBGBFBEN/.texlive2024/t
-exmf-var/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
-olved path "e:/PGM/texlive/2024/texmf-dist/tex/luatex/luaotfload/fontloader-2023
--12-28.lua".
+luaotfload | conf : Root cache directory is "C:/texlive/2023/texmf-var/luatex-ca
+che/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-08-19.lua" from kpse-res
+olved path "c:/texlive/2023/texmf-dist/tex/luatex/luaotfload/fontloader-2023-08-
+19.lua".
 Lua-only attribute luaotfload@noligature = 1
-luaotfload | init : Context OpenType loader version 3.134
+luaotfload | init : Context OpenType loader version 3.133
 Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
 Inserting `luaotfload.define_font' in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "C:/Users/NXVZBGBFBEN/.texlive2024/t
-exmf-var/luatex-cache/generic/names".
+luaotfload | conf : Root cache directory is "C:/texlive/2023/texmf-var/luatex-ca
+che/generic/names".
 Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
 Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
 Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
@@ -40,246 +40,242 @@ Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
-Inserting `tracingstacklevels' in `input_level_string'. (e:/PGM/texlive/2024/te
-xmf-dist/tex/latex/beamer/beamer.cls
+Inserting `tracingstacklevels' in `input_level_string'. (c:/texlive/2023/texmf-
+dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2024/01/06 v3.71 A class for typesetting presentations
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
+(c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count192
+\etb@tempcnta=\count185
 )
-\beamer@tempbox=\box52
-\beamer@tempcount=\count193
-\c@beamerpauses=\count194
+\beamer@tempbox=\box51
+\beamer@tempcount=\count186
+\c@beamerpauses=\count187
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
-\beamer@slideinframe=\count195
-\beamer@minimum=\count196
-\beamer@decode@box=\box53
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+\beamer@slideinframe=\count188
+\beamer@minimum=\count189
+\beamer@decode@box=\box52
 )
-\beamer@commentbox=\box54
-\beamer@modecount=\count197
+\beamer@commentbox=\box53
+\beamer@modecount=\count190
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-\headdp=\dimen140
-\footheight=\dimen141
-\sidebarheight=\dimen142
-\beamer@tempdim=\dimen143
-\beamer@finalheight=\dimen144
-\beamer@animht=\dimen145
-\beamer@animdp=\dimen146
-\beamer@animwd=\dimen147
-\beamer@leftmargin=\dimen148
-\beamer@rightmargin=\dimen149
-\beamer@leftsidebar=\dimen150
-\beamer@rightsidebar=\dimen151
-\beamer@boxsize=\dimen152
-\beamer@vboxoffset=\dimen153
-\beamer@descdefault=\dimen154
-\beamer@descriptionwidth=\dimen155
-\beamer@lastskip=\skip49
-\beamer@areabox=\box55
-\beamer@animcurrent=\box56
-\beamer@animshowbox=\box57
-\beamer@sectionbox=\box58
-\beamer@logobox=\box59
-\beamer@linebox=\box60
-\beamer@sectioncount=\count198
-\beamer@subsubsectionmax=\count199
-\beamer@subsectionmax=\count266
-\beamer@sectionmax=\count267
-\beamer@totalheads=\count268
-\beamer@headcounter=\count269
-\beamer@partstartpage=\count270
-\beamer@sectionstartpage=\count271
-\beamer@subsectionstartpage=\count272
-\beamer@animationtempa=\count273
-\beamer@animationtempb=\count274
-\beamer@xpos=\count275
-\beamer@ypos=\count276
-\beamer@ypos@offset=\count277
-\beamer@showpartnumber=\count278
-\beamer@currentsubsection=\count279
-\beamer@coveringdepth=\count280
-\beamer@sectionadjust=\count281
-\beamer@toclastsection=\count282
-\beamer@tocsectionnumber=\count283
+\headdp=\dimen139
+\footheight=\dimen140
+\sidebarheight=\dimen141
+\beamer@tempdim=\dimen142
+\beamer@finalheight=\dimen143
+\beamer@animht=\dimen144
+\beamer@animdp=\dimen145
+\beamer@animwd=\dimen146
+\beamer@leftmargin=\dimen147
+\beamer@rightmargin=\dimen148
+\beamer@leftsidebar=\dimen149
+\beamer@rightsidebar=\dimen150
+\beamer@boxsize=\dimen151
+\beamer@vboxoffset=\dimen152
+\beamer@descdefault=\dimen153
+\beamer@descriptionwidth=\dimen154
+\beamer@lastskip=\skip48
+\beamer@areabox=\box54
+\beamer@animcurrent=\box55
+\beamer@animshowbox=\box56
+\beamer@sectionbox=\box57
+\beamer@logobox=\box58
+\beamer@linebox=\box59
+\beamer@sectioncount=\count191
+\beamer@subsubsectionmax=\count192
+\beamer@subsectionmax=\count193
+\beamer@sectionmax=\count194
+\beamer@totalheads=\count195
+\beamer@headcounter=\count196
+\beamer@partstartpage=\count197
+\beamer@sectionstartpage=\count198
+\beamer@subsectionstartpage=\count199
+\beamer@animationtempa=\count266
+\beamer@animationtempb=\count267
+\beamer@xpos=\count268
+\beamer@ypos=\count269
+\beamer@ypos@offset=\count270
+\beamer@showpartnumber=\count271
+\beamer@currentsubsection=\count272
+\beamer@coveringdepth=\count273
+\beamer@sectionadjust=\count274
+\beamer@toclastsection=\count275
+\beamer@tocsectionnumber=\count276
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 ))
-\beamer@paperwidth=\skip50
-\beamer@paperheight=\skip51
+\beamer@paperwidth=\skip49
+\beamer@paperheight=\skip50
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count284
-\Gm@cntv=\count285
-\c@Gm@tempcnt=\count286
-\Gm@bindingoffset=\dimen156
-\Gm@wd@mp=\dimen157
-\Gm@odd@mp=\dimen158
-\Gm@even@mp=\dimen159
-\Gm@layoutwidth=\dimen160
-\Gm@layoutheight=\dimen161
-\Gm@layouthoffset=\dimen162
-\Gm@layoutvoffset=\dimen163
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@layoutwidth=\dimen159
+\Gm@layoutheight=\dimen160
+\Gm@layouthoffset=\dimen161
+\Gm@layoutvoffset=\dimen162
 \Gm@dimlist=\toks18
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks19
-\pgfutil@tempdima=\dimen164
-\pgfutil@tempdimb=\dimen165
+\pgfutil@tempdima=\dimen163
+\pgfutil@tempdimb=\dimen164
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box61
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box60
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks20
 \pgfkeys@temptoks=\toks21
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltere
-d.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
+de.tex
 \pgfkeys@tmptoks=\toks22
-)))
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen166
-\pgf@xa=\dimen167
-\pgf@xb=\dimen168
-\pgf@xc=\dimen169
-\pgf@y=\dimen170
-\pgf@ya=\dimen171
-\pgf@yb=\dimen172
-\pgf@yc=\dimen173
-\c@pgf@counta=\count287
-\c@pgf@countb=\count288
-\c@pgf@countc=\count289
-\c@pgf@countd=\count290
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen165
+\pgf@xa=\dimen166
+\pgf@xb=\dimen167
+\pgf@xc=\dimen168
+\pgf@y=\dimen169
+\pgf@ya=\dimen170
+\pgf@yb=\dimen171
+\pgf@yc=\dimen172
+\c@pgf@counta=\count280
+\c@pgf@countb=\count281
+\c@pgf@countc=\count282
+\c@pgf@countd=\count283
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen174
-\pgfmath@count=\count291
-\pgfmath@box=\box62
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen173
+\pgfmath@count=\count284
+\pgfmath@box=\box61
 \pgfmath@toks=\toks23
 \pgfmath@stack@operand=\toks24
 \pgfmath@stack@operation=\toks25
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.cod
-e.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonome
-tric.code.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.co
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
 de.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compariso
-n.code.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code
-.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.cod
-e.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code
-.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerar
-ithmetics.code.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count292
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count285
 )))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from C:/Users/NXVZBGBFBEN/.texlive2
-024/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/texlive/2023/texmf-var/luat
+ex-cache/generic/names/luaotfload-names.luc.gz)
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 106.
+Package graphics Info: Driver file: luatex.def on input line 107.
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen175
-\Gin@req@width=\dimen176
+\Gin@req@height=\dimen174
+\Gin@req@width=\dimen175
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-\pgf@x=\dimen177
-\pgf@y=\dimen178
-\pgf@xa=\dimen179
-\pgf@ya=\dimen180
-\pgf@xb=\dimen181
-\pgf@yb=\dimen182
-\pgf@xc=\dimen183
-\pgf@yc=\dimen184
-\pgf@xd=\dimen185
-\pgf@yd=\dimen186
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\pgf@xd=\dimen184
+\pgf@yd=\dimen185
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count293
-\c@pgf@countb=\count294
-\c@pgf@countc=\count295
-\c@pgf@countd=\count296
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
 \t@pgf@toka=\toks26
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count297
+\pgf@sys@id@count=\count290
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-luatex.def
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
 File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.d
-ef
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code
-.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count298
-\pgfsyssoftpath@bigbuffer@items=\count299
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code
-.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (e:/PGM/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: luatex.def on input line 274.
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -290,250 +286,243 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.t
-ex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen187
-\pgf@picmaxx=\dimen188
-\pgf@picminy=\dimen189
-\pgf@picmaxy=\dimen190
-\pgf@pathminx=\dimen191
-\pgf@pathmaxx=\dimen192
-\pgf@pathminy=\dimen193
-\pgf@pathmaxy=\dimen194
-\pgf@xx=\dimen195
-\pgf@xy=\dimen196
-\pgf@yx=\dimen197
-\pgf@yy=\dimen198
-\pgf@zx=\dimen199
-\pgf@zy=\dimen256
+\pgf@picminx=\dimen186
+\pgf@picmaxx=\dimen187
+\pgf@picminy=\dimen188
+\pgf@picmaxy=\dimen189
+\pgf@pathminx=\dimen190
+\pgf@pathmaxx=\dimen191
+\pgf@pathminy=\dimen192
+\pgf@pathmaxy=\dimen193
+\pgf@xx=\dimen194
+\pgf@xy=\dimen195
+\pgf@yx=\dimen196
+\pgf@yy=\dimen197
+\pgf@zx=\dimen198
+\pgf@zy=\dimen199
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct
-.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen257
-\pgf@path@lasty=\dimen258
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.cod
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
 e.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen259
-\pgf@shorten@start@additional=\dimen260
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen256
+\pgf@path@lasty=\dimen257
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.t
-ex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box63
-\pgf@hbox=\box64
-\pgf@layerbox@main=\box65
-\pgf@picture@serial@count=\count300
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.
-code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen261
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformatio
-ns.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen262
-\pgf@pt@y=\dimen263
-\pgf@pt@temp=\dimen264
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.te
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
 x
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen258
+\pgf@shorten@start@additional=\dimen259
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count293
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen260
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen261
+\pgf@pt@y=\dimen262
+\pgf@pt@temp=\dimen263
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.
-tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessin
-g.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.t
-ex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen265
+\pgfarrowsep=\dimen264
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.te
-x
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen266
-\pgf@sys@shading@range@num=\count301
-\pgf@shadingcount=\count302
+\pgf@max=\dimen265
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.te
-x
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code
-.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box66
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.t
-ex
+\pgfexternal@startupbox=\box65
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.
-code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code
-.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
+))) (c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
-\XC@nummixins=\count303
-\XC@countmixins=\count304
+\XC@nummixins=\count296
+\XC@countmixins=\count297
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+(c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 \pdftexcmds@toks=\toks29
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+(c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+(c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count305
+\c@section@level=\count298
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
-\@linkdim=\dimen267
-\Hy@linkcounter=\count306
-\Hy@pagecounter=\count307
+\@linkdim=\dimen266
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+(c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count308
+\Hy@SavedSpaceFactor=\count301
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4040.
-Package hyperref Info: Option `bookmarks' set `true' on input line 4040.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4040.
-Package hyperref Info: Option `implicit' set `false' on input line 4040.
-Package hyperref Info: Hyper figures OFF on input line 4157.
-Package hyperref Info: Link nesting OFF on input line 4162.
-Package hyperref Info: Hyper index ON on input line 4165.
-Package hyperref Info: Plain pages OFF on input line 4172.
-Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Option `unicode' set `true' on input line 4064.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4064.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4064.
+Package hyperref Info: Option `implicit' set `false' on input line 4064.
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
-Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count309
+Package hyperref Info: Bookmarks ON on input line 4448.
+\c@Hy@tempcnt=\count302
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
+(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen268
+LaTeX Info: Redefining \url on input line 4786.
+\XeTeXLinkMargin=\dimen267
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count310
-\Field@Width=\dimen269
-\Fld@charsize=\dimen270
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
-\Hy@abspage=\count311
+\Fld@menulength=\count303
+\Field@Width=\dimen268
+\Fld@charsize=\dimen269
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing OFF on input line 6080.
+Package hyperref Info: Link coloring OFF on input line 6085.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode OFF on input line 6095.
+\Hy@abspage=\count304
 
 
 Package hyperref Message: Stopped early.
 
 )
 Package hyperref Info: Driver (autodetected): hluatex.
- (e:/PGM/texlive/2024/texmf-dist/tex/latex/hyperref/hluatex.def
-File: hluatex.def 2024-07-10 v7.01j Hyperref driver for luaTeX
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2023-11-26 v7.01g Hyperref driver for luaTeX
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(c:/texlive/2023/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count312
-\c@bookmark@seq@number=\count313
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasefont.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks30
 \symAMSa=\mathgroup4
@@ -542,223 +531,225 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+(c:/texlive/2023/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
 Package: sansmathaccent 2020/01/31
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/koma-script/scrlfile.sty
+(c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+(c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
 Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
 
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/koma-script/scrlogo.sty
+(c:/texlive/2023/texmf-dist/tex/latex/koma-script/scrlogo.sty
 Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
 )))))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/translator/translator.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
+(c:/texlive/2023/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
-\beamer@argscount=\count314
-\beamer@lastskipcover=\skip52
-\beamer@trivlistdepth=\count315
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+\beamer@argscount=\count307
+\beamer@lastskipcover=\skip51
+\beamer@trivlistdepth=\count308
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetitle.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasesection.sty
-\c@lecture=\count316
-\c@part=\count317
-\c@section=\count318
-\c@subsection=\count319
-\c@subsubsection=\count320
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasetitle.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+\c@lecture=\count309
+\c@part=\count310
+\c@section=\count311
+\c@subsection=\count312
+\c@subsubsection=\count313
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
-\beamer@framebox=\box67
-\beamer@frametitlebox=\box68
-\beamer@zoombox=\box69
-\beamer@zoomcount=\count321
-\beamer@zoomframecount=\count322
-\beamer@frametextheight=\dimen271
-\c@subsectionslide=\count323
-\beamer@frametopskip=\skip53
-\beamer@framebottomskip=\skip54
-\beamer@frametopskipautobreak=\skip55
-\beamer@framebottomskipautobreak=\skip56
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+\beamer@framebox=\box66
+\beamer@frametitlebox=\box67
+\beamer@zoombox=\box68
+\beamer@zoomcount=\count314
+\beamer@zoomframecount=\count315
+\beamer@frametextheight=\dimen270
+\c@subsectionslide=\count316
+\beamer@frametopskip=\skip52
+\beamer@framebottomskip=\skip53
+\beamer@frametopskipautobreak=\skip54
+\beamer@framebottomskipautobreak=\skip55
 \beamer@envbody=\toks31
-\framewidth=\dimen272
-\c@framenumber=\count324
+\framewidth=\dimen271
+\c@framenumber=\count317
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
-\beamer@splitbox=\box70
-\beamer@autobreakcount=\count325
-\beamer@autobreaklastheight=\dimen273
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+\beamer@splitbox=\box69
+\beamer@autobreakcount=\count318
+\beamer@autobreaklastheight=\dimen272
 \beamer@frametitletoks=\toks32
 \beamer@framesubtitletoks=\toks33
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
-\beamer@footins=\box71
-) (e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasecolor.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
-\beamer@frameboxcopy=\box72
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+\beamer@footins=\box70
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetoc.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasecolor.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+\beamer@frameboxcopy=\box71
+)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasetoc.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
 \beamer@sbttoks=\toks34
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
-\bmb@box=\box73
-\bmb@colorbox=\box74
-\bmb@boxwidth=\dimen274
-\bmb@boxheight=\dimen275
-\bmb@prevheight=\dimen276
-\bmb@temp=\dimen277
-\bmb@dima=\dimen278
-\bmb@dimb=\dimen279
-\bmb@prevheight=\dimen280
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+\bmb@box=\box72
+\bmb@colorbox=\box73
+\bmb@boxwidth=\dimen273
+\bmb@boxheight=\dimen274
+\bmb@prevheight=\dimen275
+\bmb@temp=\dimen276
+\bmb@dima=\dimen277
+\bmb@dimb=\dimen278
+\bmb@prevheight=\dimen279
 )
-\beamer@blockheadheight=\dimen281
+\beamer@blockheadheight=\dimen280
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/tools/enumerate.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
+(c:/texlive/2023/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
 \@enLab=\toks35
 )
-\beamer@bibiconwidth=\skip57
-\c@figure=\count326
-\c@table=\count327
-\abovecaptionskip=\skip58
-\belowcaptionskip=\skip59
+\beamer@bibiconwidth=\skip56
+\c@figure=\count319
+\c@table=\count320
+\abovecaptionskip=\skip57
+\belowcaptionskip=\skip58
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.te
-x)
-\beamer@section@min@dim=\dimen282
-) (e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2024/05/23 v2.17q AMS math features
-\@mathmargin=\skip60
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex)
+\beamer@section@min@dim=\dimen281
+)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip59
 
 For additional information on amsmath, use the `?' option.
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks36
-\ex@=\dimen283
+\ex@=\dimen282
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen284
+\pmbraise@=\dimen283
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count328
-LaTeX Info: Redefining \frac on input line 235.
-\uproot@=\count329
-\leftroot@=\count330
-LaTeX Info: Redefining \overline on input line 398.
-LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count331
-\DOTSCASE@=\count332
-LaTeX Info: Redefining \ldots on input line 495.
-LaTeX Info: Redefining \dots on input line 498.
-LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box75
-\strutbox@=\box76
-LaTeX Info: Redefining \big on input line 721.
-LaTeX Info: Redefining \Big on input line 722.
-LaTeX Info: Redefining \bigg on input line 723.
-LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen285
-LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count333
-LaTeX Info: Redefining \bmod on input line 904.
-LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-LaTeX Info: Redefining \relbar on input line 969.
-LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count334
-\dotsspace@=\muskip18
-\c@parentequation=\count335
-\dspbrk@lvl=\count336
+\inf@bad=\count321
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count322
+\leftroot@=\count323
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count324
+\DOTSCASE@=\count325
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box74
+\strutbox@=\box75
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen284
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count326
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count327
+\dotsspace@=\muskip17
+\c@parentequation=\count328
+\dspbrk@lvl=\count329
 \tag@help=\toks37
-\row@=\count337
-\column@=\count338
-\maxfields@=\count339
+\row@=\count330
+\column@=\count331
+\maxfields@=\count332
 \andhelp@=\toks38
-\eqnshift@=\dimen286
-\alignsep@=\dimen287
-\tagshift@=\dimen288
-\tagwidth@=\dimen289
-\totwidth@=\dimen290
-\lineht@=\dimen291
+\eqnshift@=\dimen285
+\alignsep@=\dimen286
+\tagshift@=\dimen287
+\tagwidth@=\dimen288
+\totwidth@=\dimen289
+\lineht@=\dimen290
 \@envbody=\toks39
-\multlinegap=\skip61
-\multlinetaggap=\skip62
+\multlinegap=\skip60
+\multlinetaggap=\skip61
 \mathdisplay@stack=\toks40
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks41
 \thm@bodyfont=\toks42
 \thm@headfont=\toks43
 \thm@notefont=\toks44
 \thm@headpunct=\toks45
-\thm@preskip=\skip63
-\thm@postskip=\skip64
-\thm@headsep=\skip65
+\thm@preskip=\skip62
+\thm@postskip=\skip63
+\thm@headsep=\skip64
 \dth@everypar=\toks46
 )
-\c@theorem=\count340
+\c@theorem=\count333
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
-\beamer@dima=\dimen292
-\beamer@dimb=\dimen293
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty)
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
+\beamer@dima=\dimen291
+\beamer@dimb=\dimen292
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/luatexja.sty
-Package: luatexja 2024-09-09 Japanese Typesetting with Lua(La)TeX
+(c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja.sty
+Package: luatexja 2023-12-30 Japanese Typesetting with Lua(La)TeX
 
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja-core.sty
 Package: luatexja-core 2023-04-06 Core of LuaTeX-ja
 
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
 Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
 
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+(c:/texlive/2023/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
-\@catcodetablestackcnt=\count341
+\@catcodetablestackcnt=\count334
 )
 \CatcodeTableOther=\catcodetable14
 \CatcodeTableExpl=\catcodetable15
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks47
 \XKV@tempa@toks=\toks48
 )
-\XKV@depth=\count342
+\XKV@depth=\count335
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/everyhook/everyhook.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+(c:/texlive/2023/texmf-dist/tex/latex/everyhook/everyhook.sty
+(c:/texlive/2023/texmf-dist/tex/latex/svn-prov/svn-prov.sty
 Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
 )
 Package: everyhook 2014/11/26 v1.2 (SVN Rev: 12)\ Hooks for low level TeX every
@@ -770,10 +761,10 @@ X primitives.
 \everyvbox=\toks53
 \everycr=\toks54
 )
-\ltjlineendcomment=\count343
-\ltj@dimen@zw=\dimen294
-\ltj@dimen@zh=\dimen295
-\ltj@dimen@jQ=\dimen296
+\ltjlineendcomment=\count336
+\ltj@dimen@zw=\dimen293
+\ltj@dimen@zh=\dimen294
+\ltj@dimen@jQ=\dimen295
 \ltj@icflag=\attribute4
 \ltj@curjfnt=\attribute5
 \ltj@curtfnt=\attribute6
@@ -789,10 +780,10 @@ X primitives.
 \ltj@vert@ori=\attribute16
 \ltj@dir=\attribute17
 \ltj@@japanese=\language2
-\ltj@tempcnta=\count344
-\ltj@tempdima=\dimen297
-\ltj@@stack=\count345
-\ltj@@group@level=\count346
+\ltj@tempcnta=\count337
+\ltj@tempdima=\dimen296
+\ltj@@stack=\count338
+\ltj@@group@level=\count339
 \ltj@kcat0=\attribute18
 \ltj@kcat1=\attribute19
 \ltj@kcat2=\attribute20
@@ -815,7 +806,7 @@ Inserting `ltj.direction' in `vpack_filter'.
 Inserting `ltj.direction' in `pre_output_filter'.
 Inserting `ltj.lineskip' in `post_linebreak_filter'.
 Inserting `ltj.lineskip' in `append_to_vlist_filter'.
-Lua module: luatexja.jfont 2024-07-25 Loader for Japanese fonts
+Lua module: luatexja.jfont 2023-04-06 Loader for Japanese fonts
 Removing  `luaotfload.define_font' from `define_font'.
 Inserting `luatexja.font_callback' in `define_font'.
 Removing  `luaotfload.aux.set_sscale_dimens' from `luaotfload.patch_font'.
@@ -861,7 +852,7 @@ Inserting `ltj.create_dir_whatsit' in `hpack_filter'.
 Removing  `luaotfload.node_processor' from `pre_linebreak_filter'.
 Inserting `ltj.set_stack_level' in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
-Lua module: luatexja.jfmglue 2024-09-01 Insertion process of JFM glues, [x]kanji
+Lua module: luatexja.jfmglue 2022-08-29 Insertion process of JFM glues, [x]kanji
 skip and others
 Inserting `luatexja.beginpar.np_info' in `luatexja.jfmglue.whatsit_getinfo'.
 Inserting `luatexja.beginpar.np_info_after' in `luatexja.jfmglue.whatsit_after'.
@@ -890,219 +881,220 @@ Inserting `luaotfload.node_processor' in `hpack_filter'.
 Inserting `ltj.main' in `hpack_filter'.
 Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
 Inserting `ltj.create_dir_whatsit' in `hpack_filter'.
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/ltj-base.sty
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/ltj-base.sty
 Package: ltj-base 2021-03-16
-\ltj@tempcntb=\count347
-\ltj@tempcntc=\count348
-\ltj@afbox=\box77
+\ltj@tempcntb=\count340
+\ltj@tempcntc=\count341
+\ltj@afbox=\box76
 )
-\ltj@@italic@inner=\luafunction30
-\ltj@@start@time@measure@inner=\luafunction31
-\ltj@@stop@time@measure@inner=\luafunction32
-\ltj@@jfont@inner=\luafunction33
-\ltj@zw@inner=\luafunction34
-\ltj@zh@inner=\luafunction35
-\ltj@reset@globaldefs@inner=\luafunction36
-\ltj@restore@globaldefs@inner=\luafunction37
-\ltj@@disihb@inner=\luafunction38
-\ltj@@ihb@inner=\luafunction39
-\ltj@@fakeparbegin@inner=\luafunction40
-\ltj@@fakeboxbdd@inner=\luafunction41
-\ltj@@ins@xk@inner=\luafunction42
-\ltj@@ins@k@inner=\luafunction43
-\ltjsetkanjiskip@inner=\luafunction44
-\ltjsetxkanjiskip@inner=\luafunction45
-\ltj@@getparam@one@inner=\luafunction46
-\ltj@alljachar@inner=\luafunction47
-\ltj@@lua@populate@insertwhatsit@inner=\luafunction48
-\ltj@@vadjust@begin@inner=\luafunction49
-\ltj@@vadjust@dirhook@inner=\luafunction50
-\ltj@@vadjust@check@dir@inner=\luafunction51
-\ltj@@box@dirhook@inner=\luafunction52
-\ltj@@reset@badness@inner=\luafunction53
-\ltj@@lua@raisebox@inner=\luafunction54
-\ltj@@vsplit@inner=\luafunction55
-\ltj@@lua@unboxcheckdir@inner=\luafunction56
-\ltj@@lua@uncopycheckdir@inner=\luafunction57
-\ltj@@lua@uncopy@restore@whatsit@inner=\luafunction58
+\ltj@@italic@inner=\luafunction25
+\ltj@@start@time@measure@inner=\luafunction26
+\ltj@@stop@time@measure@inner=\luafunction27
+\ltj@@jfont@inner=\luafunction28
+\ltj@zw@inner=\luafunction29
+\ltj@zh@inner=\luafunction30
+\ltj@reset@globaldefs@inner=\luafunction31
+\ltj@restore@globaldefs@inner=\luafunction32
+\ltj@@disihb@inner=\luafunction33
+\ltj@@ihb@inner=\luafunction34
+\ltj@@fakeparbegin@inner=\luafunction35
+\ltj@@fakeboxbdd@inner=\luafunction36
+\ltj@@ins@xk@inner=\luafunction37
+\ltj@@ins@k@inner=\luafunction38
+\ltjsetkanjiskip@inner=\luafunction39
+\ltjsetxkanjiskip@inner=\luafunction40
+\ltj@@getparam@one@inner=\luafunction41
+\ltj@alljachar@inner=\luafunction42
+\ltj@@lua@populate@insertwhatsit@inner=\luafunction43
+\ltj@@vadjust@begin@inner=\luafunction44
+\ltj@@vadjust@dirhook@inner=\luafunction45
+\ltj@@vadjust@check@dir@inner=\luafunction46
+\ltj@@box@dirhook@inner=\luafunction47
+\ltj@@reset@badness@inner=\luafunction48
+\ltj@@lua@raisebox@inner=\luafunction49
+\ltj@@vsplit@inner=\luafunction50
+\ltj@@lua@unboxcheckdir@inner=\luafunction51
+\ltj@@lua@uncopycheckdir@inner=\luafunction52
+\ltj@@lua@uncopy@restore@whatsit@inner=\luafunction53
 (load cache: ltj-kinsoku_default.luc)
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/ltj-latex.sty
-Package: ltj-latex 2024-05-16 LaTeX support of LuaTeX-ja
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/ltj-latex.sty
+Package: ltj-latex 2022-10-15 LaTeX support of LuaTeX-ja
 Inserting `ltj.direction' in `pre_shipout_filter'.
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/patches/lltjfont.sty
-Package: lltjfont 2023-05-16 Patch to NFSS2 for LuaTeX-ja
-\ltj@@latex@plv=\count349
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjfont.sty
+Package: lltjfont 2023-04-13 Patch to NFSS2 for LuaTeX-ja
+\ltj@@latex@plv=\count342
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/base/tuenc.def
+(c:/texlive/2023/texmf-dist/tex/latex/base/tuenc.def
 File: tuenc.def 2021/04/29 v2.0v Standard LaTeX file
-\@remove@tlig@@@=\luafunction59
+\@remove@tlig@@@=\luafunction54
 LaTeX Font Info:    Redeclaring font encoding TU on input line 105.
 )
-\Cht=\dimen298
-\cht=\dimen299
-\Cdp=\dimen300
-\cdp=\dimen301
-\Cwd=\dimen302
-\cwd=\dimen303
-\Cvs=\dimen304
-\cvs=\dimen305
-\Chs=\dimen306
-\chs=\dimen307
-\cHT=\dimen308
-\dstrutbox=\box78
-\tstrutbox=\box79
-\zstrutbox=\box80
-LaTeX Info: Redefining \strut on input line 70.
-\ltj@@add@fenc@@inner=\luafunction60
-\ltj@@add@kyenc@@inner=\luafunction61
-\ltj@@add@ktenc@@inner=\luafunction62
-\ltj@@is@kyenc@@inner=\luafunction63
-\ltj@@is@ktenc@@inner=\luafunction64
-\ltj@@is@kenc@@inner=\luafunction65
-\ltj@@is@ffam@@inner=\luafunction66
-\ltj@@add@ffam@@inner=\luafunction67
-\ltj@@add@kfam@@inner=\luafunction68
-\ltj@@adjust@baseline@inner=\luafunction69
-LaTeX Info: Redefining \fontencoding on input line 572.
-LaTeX Info: Redefining \fontfamily on input line 615.
-LaTeX Info: Redefining \fontseries on input line 769.
-LaTeX Info: Redefining \fontseriesforce on input line 770.
-LaTeX Info: Redefining \fontshape on input line 778.
-LaTeX Info: Redefining \fontshapeforce on input line 789.
-\ltj@@jfont@@jfmonly@@inner=\luafunction70
-\ltj@@does@alt@set@@inner=\luafunction71
-\ltj@@cipath@clear@inner=\luafunction72
+\Cht=\dimen297
+\cht=\dimen298
+\Cdp=\dimen299
+\cdp=\dimen300
+\Cwd=\dimen301
+\cwd=\dimen302
+\Cvs=\dimen303
+\cvs=\dimen304
+\Chs=\dimen305
+\chs=\dimen306
+\cHT=\dimen307
+\dstrutbox=\box77
+\tstrutbox=\box78
+\zstrutbox=\box79
+LaTeX Info: Redefining \strut on input line 91.
+\ltj@@add@fenc@@inner=\luafunction55
+\ltj@@add@kyenc@@inner=\luafunction56
+\ltj@@add@ktenc@@inner=\luafunction57
+\ltj@@is@kyenc@@inner=\luafunction58
+\ltj@@is@ktenc@@inner=\luafunction59
+\ltj@@is@kenc@@inner=\luafunction60
+\ltj@@is@ffam@@inner=\luafunction61
+\ltj@@add@ffam@@inner=\luafunction62
+\ltj@@add@kfam@@inner=\luafunction63
+\ltj@@adjust@baseline@inner=\luafunction64
+LaTeX Info: Redefining \fontencoding on input line 646.
+LaTeX Info: Redefining \fontfamily on input line 689.
+LaTeX Info: Redefining \fontseries on input line 923.
+LaTeX Info: Redefining \fontseriesforce on input line 924.
+LaTeX Info: Redefining \fontshape on input line 944.
+LaTeX Info: Redefining \fontshapeforce on input line 955.
+\ltj@@jfont@@jfmonly@@inner=\luafunction65
+\ltj@@does@alt@set@@inner=\luafunction66
+\ltj@@cipath@clear@inner=\luafunction67
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
-Package: lltjdefs 2024-05-16 Default font settings of LuaTeX-ja
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjdefs.sty
+Package: lltjdefs 2022-01-23 Default font settings of LuaTeX-ja
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 69.
+(Font)              scaled to size 9.6222pt on input line 79.
 
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/jfm-ujisv.lua)
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/jfm-ujisv.lua)
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 69.
+(Font)              scaled to size 9.6222pt on input line 79.
 (load cache: extra_haranoajimincho-regular.luc)
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/jfm-ujis.lua)
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/jfm-ujis.lua)
 \symmincho=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY3/mc/m/n --> JY3/gt/m/n on input line 78.
+(Font)                  JY3/mc/m/n --> JY3/gt/m/n on input line 88.
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjcore.sty
 Package: lltjcore 2023-02-26 Patch to LaTeX2e Kernel for LuaTeX-ja
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-09-10 L3 programming layer (loader) 
+(c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count350
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count343
 Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box81
+\l__pdf_internal_box=\box80
 ))
-\@tombowwidth=\dimen309
-\@TL=\box82
-\@Tl=\box83
-\@TC=\box84
-\@TR=\box85
-\@Tr=\box86
-\@BL=\box87
-\@Bl=\box88
-\@BC=\box89
-\@BR=\box90
-\@Br=\box91
-\@CL=\box92
-\@CR=\box93
+\@tombowwidth=\dimen308
+\@TL=\box81
+\@Tl=\box82
+\@TC=\box83
+\@TR=\box84
+\@Tr=\box85
+\@BL=\box86
+\@Bl=\box87
+\@BC=\box88
+\@BR=\box89
+\@Br=\box90
+\@CL=\box91
+\@CR=\box92
 (load cache: extra_lmmono9-regular.luc)
 \@bannertoken=\toks55
-\@@paperheight=\dimen310
-\@@paperwidth=\dimen311
-\@@topmargin=\dimen312
-LaTeX Info: Redefining \underline on input line 284.
+\@@paperheight=\dimen309
+\@@paperwidth=\dimen310
+\@@topmargin=\dimen311
+LaTeX Info: Redefining \underline on input line 280.
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/patches/lltjp-atbegshi.sty
-Package: lltjp-atbegshi 2024-05-14 Patching \shipout hooks for LuaTeX-ja
-\l__platex_shipout_dummy_box=\box94
-) (e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/patches/lltjp-geometry.st
-y
-Package: lltjp-geometry 2024-05-16 Patch to geometry for LuaTeX-ja with vertica
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjp-atbegshi.sty
+Package: lltjp-atbegshi 2022-08-12 Patching \shipout hooks for LuaTeX-ja
+\l__platex_shipout_dummy_box=\box93
+)
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjp-geometry.sty
+Package: lltjp-geometry 2021-10-24 Patch to geometry for LuaTeX-ja with vertica
 l writing mode
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/iftex/ifluatex.sty
+
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )))
 \ltj@temp@cctb=\catcodetable16
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/luatexja-compat.sty
 Package: luatexja-compat 2020-08-08 Compatibility with pTeX
 (load cache: ltj-jisx0208.luc)
-\hour=\count351
-\minute=\count352
+\hour=\count344
+\minute=\count345
 ))
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/addons/luatexja-preset.sty
-Package: luatexja-preset 2024-03-30 Japanese font presets
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/addons/luatexja-preset.sty
+Package: luatexja-preset 2022-06-19 Japanese font presets
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+(c:/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
 )
-\g__ltjpreset_applycount_int=\count353
+\g__ltjpreset_applycount_int=\count346
 
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.st
-y
-Package: luatexja-fontspec 2024-05-14 fontspec support of LuaTeX-ja
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.sty
+Package: luatexja-fontspec 2020-09-14 fontspec support of LuaTeX-ja
 (load cache: extra_lmsans17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 15.39551pt on input line 16.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 15.39551pt on input line 16.
- (e:/PGM/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
-)
-Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
-Lua module: fontspec 2024/05/11 2.9e Font selection for XeLaTeX and LuaLaTeX
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
-Package: fontspec-luatex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaT
-eX
-\l__fontspec_script_int=\count354
-\l__fontspec_language_int=\count355
-\l__fontspec_strnum_int=\count356
-\l__fontspec_tmp_int=\count357
-\l__fontspec_tmpa_int=\count358
-\l__fontspec_tmpb_int=\count359
-\l__fontspec_tmpc_int=\count360
-\l__fontspec_em_int=\count361
-\l__fontspec_emdef_int=\count362
-\l__fontspec_strong_int=\count363
-\l__fontspec_strongdef_int=\count364
-\l__fontspec_tmpa_dim=\dimen313
-\l__fontspec_tmpb_dim=\dimen314
-\l__fontspec_tmpc_dim=\dimen315
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.sty
+(c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX
+(c:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count347
+\l__fontspec_language_int=\count348
+\l__fontspec_strnum_int=\count349
+\l__fontspec_tmp_int=\count350
+\l__fontspec_tmpa_int=\count351
+\l__fontspec_tmpb_int=\count352
+\l__fontspec_tmpc_int=\count353
+\l__fontspec_em_int=\count354
+\l__fontspec_emdef_int=\count355
+\l__fontspec_strong_int=\count356
+\l__fontspec_strongdef_int=\count357
+\l__fontspec_tmpa_dim=\dimen312
+\l__fontspec_tmpb_dim=\dimen313
+\l__fontspec_tmpc_dim=\dimen314
+
+(c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 116.
+(Font)              scaled to size 9.6222pt on input line 112.
 )
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 439.
+(Font)              scaled to size 10.53629pt on input line 483.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 439.
+(Font)              scaled to size 10.53629pt on input line 483.
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load cache: ext
-ra_lmsans10-bold.luc)
+(c:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg)(load cache: extra_l
+msans10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10.95> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 3978.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 3901.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 3978.
+(Font)              scaled to size 10.53629pt on input line 3901.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10.95> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 3978.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 3901.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 10.53629pt on input line 3978.
+(Font)              scaled to size 10.53629pt on input line 3901.
 (load cache: extra_haranoajigothic-medium.luc)))
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty)
-(e:/PGM/texlive/2024/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec-29
-e.sty
-Package: luatexja-fontspec-29e 2024-05-27 fontspec support of LuaTeX-ja
-\g__ltj_fontspec_altnumber_int=\count365
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty)
+(c:/texlive/2023/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec-27c.st
+y
+Package: luatexja-fontspec-27c 2020-04-04 fontspec support of LuaTeX-ja
+\g__ltj_fontspec_altnumber_int=\count358
 ))
 
 Package luatexja-preset Warning: Japanese fonts will be scaled by
@@ -1114,39 +1106,9 @@ Package luatexja-fontspec Warning: \addjfontfeature(s) ignored;
 (luatexja-fontspec)                selected by luatexja-fontspec.
 
 (load cache: extra_haranoajigothic-heavy.luc)(load cache: extra_haranoajimincho-
-light.luc)
+light.luc)(load cache: extra_haranoajimincho-bold.luc)
 
-Package fontspec Info: 
-(fontspec)             HaranoAjiMincho-Regular scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiMincho-Light scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiMincho-Light scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiMincho-Regular scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiMincho-Regular scale = 0.96221923828125.
-
-(load cache: extra_haranoajimincho-bold.luc)
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiMincho-Bold scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiMincho-Bold scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'HaranoAjiMincho-Regular.otf(0)' created
+Package fontspec Info: Font family 'HaranoAjiMincho-Regular.otf(0)' created
 (fontspec)             for font 'HaranoAjiMincho-Regular.otf' with options
 (fontspec)             [YokoFeatures={JFM=ujis},TateFeatures={JFM=ujisv},Scale=
 0.96221923828125,Kerning=Off,Script=CJK,FontFace={l}{n}{Font=HaranoAjiMincho-Li
@@ -1158,55 +1120,26 @@ isv},Script=CJK].
 (fontspec)             series/shapes:
 (fontspec)              
 
-LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 734.
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 732.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
 (Font)                  JY3/mc/m/n --> JY3/HaranoAjiMincho-Regular.otf(0)/m/n o
-n input line 734.
+n input line 732.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 (Font)                  JY3/gt/m/n --> JY3/HaranoAjiMincho-Regular.otf(0)/m/n o
-n input line 734.
+n input line 732.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 (Font)                  JY3/HaranoAjiMincho-Regular.otf(0)/m/n --> JY3/HaranoAj
-iMincho-Regular.otf(0)/b/n on input line 734.
+iMincho-Regular.otf(0)/b/n on input line 732.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 10.53629pt on input line 734.
+(Font)              scaled to size 10.53629pt on input line 732.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 10.53629pt on input line 734.
-(load cache: extra_haranoajigothic-regular.luc)
+(Font)              scaled to size 10.53629pt on input line 732.
+(load cache: extra_haranoajigothic-regular.luc)(load cache: extra_haranoajigothi
+c-bold.luc)
 
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Regular scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Heavy scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Heavy scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Regular scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Regular scale = 0.96221923828125.
-
-(load cache: extra_haranoajigothic-bold.luc)
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Bold scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Bold scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'HaranoAjiGothic-Regular.otf(0)' created
+Package fontspec Info: Font family 'HaranoAjiGothic-Regular.otf(0)' created
 (fontspec)             for font 'HaranoAjiGothic-Regular.otf' with options
 (fontspec)             [YokoFeatures={JFM=ujis},TateFeatures={JFM=ujisv},Scale=
 0.96221923828125,Kerning=Off,Script=CJK,FontFace={eb}{n}{Font=HaranoAjiGothic-H
@@ -1218,36 +1151,15 @@ jisv},Script=CJK].
 (fontspec)             series/shapes:
 (fontspec)              
 
-LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 734.
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 732.
 LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
 (Font)                  JY3/gt/m/n --> JY3/HaranoAjiGothic-Regular.otf(0)/m/n o
-n input line 734.
+n input line 732.
 LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
 (Font)                  JY3/gt/m/n --> JY3/HaranoAjiGothic-Regular.otf(0)/m/n o
-n input line 734.
+n input line 732.
 
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Medium scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Medium scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Medium scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Medium scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             HaranoAjiGothic-Medium scale = 0.96221923828125.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'HaranoAjiGothic-Medium.otf(0)' created for
+Package fontspec Info: Font family 'HaranoAjiGothic-Medium.otf(0)' created for
 (fontspec)             font 'HaranoAjiGothic-Medium.otf' with options
 (fontspec)             [YokoFeatures={JFM=ujis},TateFeatures={JFM=ujisv},Scale=
 0.96221923828125,Kerning=Off,Script=CJK,BoldFont=HaranoAjiGothic-Medium.otf,Yok
@@ -1258,697 +1170,30 @@ oFeatures={Style=HorizontalKana},TateFeatures={Style=VerticalKana},YokoFeatures
 (fontspec)             series/shapes:
 (fontspec)              
 
-) (e:/PGM/texlive/2024/texmf-dist/tex/latex/moloch/beamerthememoloch.sty
-Package: beamerthememoloch 2024-07-09 v0.4.0 Moloch Beamer theme
-
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgfopts/pgfopts.sty
-Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks56
-\pgfopts@list@add@b@toks=\toks57
 )
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/moloch/beamerinnerthememoloch.sty
-Package: beamerinnerthememoloch 2024-07-09 v0.4.0 Moloch inner theme
 
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count366
-\calc@Bcount=\count367
-\calc@Adimen=\dimen316
-\calc@Bdimen=\dimen317
-\calc@Askip=\skip66
-\calc@Bskip=\skip67
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count368
-\calc@Cskip=\skip68
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+! LaTeX Error: File `beamerthememoloch.sty' not found.
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
-x
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box95
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-6
-5.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen318
-\pgf@nodesepend=\dimen319
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-1
-8.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen320
-\pgffor@skip=\dimen321
-\pgffor@stack=\toks58
-\pgffor@toks=\toks59
-))
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.te
-x
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandler
-s.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count369
-\pgfplotmarksize=\dimen322
-)
-\tikz@lastx=\dimen323
-\tikz@lasty=\dimen324
-\tikz@lastxsaved=\dimen325
-\tikz@lastysaved=\dimen326
-\tikz@lastmovetox=\dimen327
-\tikz@lastmovetoy=\dimen328
-\tikzleveldistance=\dimen329
-\tikzsiblingdistance=\dimen330
-\tikz@figbox=\box96
-\tikz@figbox@bg=\box97
-\tikz@tempbox=\box98
-\tikz@tempbox@bg=\box99
-\tikztreelevel=\count370
-\tikznumberofchildren=\count371
-\tikznumberofcurrentchild=\count372
-\tikz@fig@count=\count373
+Enter file name: 
+./main.tex:19: Emergency stop.
+<read *> 
+   
+l.19 ]{moloch}
+            
+*** (cannot \read from terminal in nonstop modes)
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.te
-x
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count374
-\pgfmatrixcurrentcolumn=\count375
-\pgf@matrix@numberofcolumns=\count376
-)
-\tikz@expandcount=\count377
 
-(e:/PGM/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
-kzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-\moloch@titleseparator@linewidth=\skip69
-\moloch@progressonsectionpage=\skip70
-\moloch@progressonsectionpage@linewidth=\skip71
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/moloch/beamerouterthememoloch.sty
-Package: beamerouterthememoloch 2024-07-09 v0.4.0 Moloch outer theme
-\moloch@frametitle@padding=\skip72
-\moloch@progressinheadfoot=\skip73
-\moloch@progressinheadfoot@linewidth=\skip74
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/moloch/beamercolorthememoloch.sty
-Package: beamercolorthememoloch 2024-07-09 v0.4.0 Moloch color theme
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/moloch/beamerfontthememoloch.sty
-Package: beamerfontthememoloch 2024-07-09 v0.4.0 Moloch font theme
-))
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/beamer/beamerfontthemeprofessionalfon
-ts.sty)
-luaotfload | cache : Lookup cache loaded from C:/Users/NXVZBGBFBEN/.texlive2024/
-texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load cache: ex
-tra_inconsolatazi4-regular.luc)
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "inconsolatazi4/BI" (it probably
-(fontspec)             doesn't exist).
-
-(load cache: extra_inconsolatazi4-bold.luc)
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "inconsolatazi4/I" (it probably
-(fontspec)             doesn't exist).
-
-luaotfload | aux : font no 46 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 46 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 46 (nil) does not define feature smcp for script dflt
- with language dflt
-luaotfload | aux : font no 46 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 46 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 46 (nil) does not define feature smcp for script dflt
- with language dflt
-luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 47 (nil) does not define feature smcp for script dflt
- with language dflt
-luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 47 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 47 (nil) does not define feature smcp for script dflt
- with language dflt
-
-Package fontspec Info: 
-(fontspec)             Font family 'inconsolatazi4(0)' created for font
-(fontspec)             'inconsolatazi4' with options
-(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
-Space].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"name:inconsolatazi4:mode=node;script=latn;language=d
-flt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"name:inconsolatazi4/B:mode=node;script=latn;language
-=dflt;"
-
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 10.53629pt on input line 23.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 10.53629pt on input line 23.
- (e:/PGM/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfpages.sty
-Package: pgfpages 2011/01/05 ver 0.02
-\pgf@logicalpages=\count378
-\pgf@firstshipout=\count379
-\pgf@lastshipout=\count380
-\pgf@currentshipout=\count381
-\pgf@cpn=\count382
-\pgf@shipoutnextto=\count383
-\pgfphysicalheight=\dimen331
-\pgfphysicalwidth=\dimen332
-\pgfpages@shipoutbox=\box100
-)
-\pgfpages@box@1=\box101
-\pgfpages@box@2=\box102
-
-(./out/main.aux)
-\openout1 = main.aux
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 4
-1.
- (e:/PGM/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: luatex
-*geometry* verbose mode - [ preamble ] result:
-* driver: luatex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 327.20671pt, 28.45274pt)
-* v-part:(T,H,B)=(0.0pt, 256.0748pt, 0.0pt)
-* \paperwidth=384.1122pt
-* \paperheight=256.0748pt
-* \textwidth=327.20671pt
-* \textheight=227.62207pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
-* \topmargin=-72.26999pt
-* \headheight=14.22636pt
-* \headsep=0.0pt
-* \topskip=11.0pt
-* \footskip=14.22636pt
-* \marginparwidth=4.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-(e:/PGM/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count384
-\scratchdimen=\dimen333
-\scratchbox=\box103
-\nofMPsegments=\count385
-\nofMParguments=\count386
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count387
-\MPscratchDim=\dimen334
-\MPnumerator=\count388
-\makeMPintoPDFobject=\count389
-\everyMPtoPDFconversion=\toks61
-) (e:/PGM/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-Package hyperref Info: Link coloring OFF on input line 41.
-
-(./out/main.out) (./out/main.out)
-\@outlinefile=\write5
-
-\openout5 = main.out
-
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionar
-y-English.dict
-Dictionary: translator-basic-dictionary, Language: English 
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/translator/translator-bibliography-di
-ctionary-English.dict
-Dictionary: translator-bibliography-dictionary, Language: English 
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/translator/translator-environment-dic
-tionary-English.dict
-Dictionary: translator-environment-dictionary, Language: English 
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/translator/translator-months-dictiona
-ry-English.dict
-Dictionary: translator-months-dictionary, Language: English 
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/translator/translator-numbers-diction
-ary-English.dict
-Dictionary: translator-numbers-dictionary, Language: English 
-)
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/translator/translator-theorem-diction
-ary-English.dict
-Dictionary: translator-theorem-dictionary, Language: English 
-) (./out/main.nav)(load cache: extra_lmsans8-regular.luc)
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 5.77332pt on input line 41.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 5.77332pt on input line 41.
-(load cache: extra_lmsans12-regular.luc)
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 13.85594pt on input line 42.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 13.85594pt on input line 42.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 13.85594pt on input line 42.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 13.85594pt on input line 42.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 11.54663pt on input line 42.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 11.54663pt on input line 42.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 9.6222pt on input line 42.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 9.6222pt on input line 42.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 7.69775pt on input line 42.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 7.69775pt on input line 42.
-
-Overfull \vbox (5.69046pt too high) detected at line 42
- []
-
-
-
-
-
-
-
-LaTeX Font Info:    Trying loading font information for U+msa on input line 45.
-
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying loading font information for U+msb on input line 45.
-
-
-(e:/PGM/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 7.69775pt on input line 45.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 5.77332pt on input line 45.
-
-
-[2
-
-{e:/PGM/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-1'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-
-]
-
-
-
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 11.54663pt on input line 77.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 11.54663pt on input line 77.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 9.6222pt on input line 77.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 9.6222pt on input line 77.
-
-
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 3.84888pt on input line 77.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 3.84888pt on input line 77.
-[3
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-2'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-
-]
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 9.6222pt on input line 77.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 6.73553pt on input line 77.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 4.8111pt on input line 77.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 6.73553pt on input line 77.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 6.73553pt on input line 77.
-
-
-
-
-[4
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-3'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
-
-]
-
-
-
-[5
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-4'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
-
-]
-
-
-
-
-
-[6
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-5'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
-
-]
-
-
-
-[7
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-6'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
-
-]
-
-
-
-[8
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-7'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
-
-]
-
-
-
-[9
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-8'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
-
-]
-
-
-
-[10
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-9'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
-
-]
-
-
-
-[11
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-10'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
-
-]
-
-
-
-[12
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-11'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
-
-]
-
-
-
-[13
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-12'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
-
-]
-
-
-
-[14
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-13'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
-
-]
-
-
-\openout4 = main.vrb
-(./out/main.vrb)
-
-[15
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-14'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
-
-]
-
-(./out/main.vrb)
-
-[16
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-15'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
-
-]
-
-
-
-[17
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-16'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
-
-]
-
-
-
-[18
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-17'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
-
-]
-
-
-
-[19
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-18'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
-
-]
-
-
-
-[20
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-19'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
-
-]
-
-\tf@nav=\write6
-
-\openout6 = main.nav
-\tf@toc=\write7
-
-\openout7 = main.toc
-\tf@snm=\write8
-
-\openout8 = main.snm
-[21
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-20'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
-
-] (./out/main.aux)
- ***********
-LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
- ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9048EC5956F1DF22423D98593E452117;241.
-)
 
 Here is how much of LuaTeX's memory you used:
- 30335 strings out of 475910
- 156564,1373583 words of node,token memory allocated
- 13706 words of node memory still in use:
-   63 hlist, 22 vlist, 57 rule, 3 disc, 7 local_par, 148 glue, 14 kern, 29 penal
-ty, 81 glyph, 4363 attribute, 68 glue_spec, 446 attribute_list, 6 write, 76 user
-_defined, 31 pdf_literal, 2 pdf_start_link, 2 pdf_end_link, 2 pdf_dest, 2 pdf_ac
-tion, 25 pdf_colorstack nodes
-   avail lists: 1:36,2:39233,3:747,4:1093,5:192,6:88,7:4598,8:48,9:1873,10:30,11
-:46
- 51970 multiletter control sequences out of 65536+600000
- 109 fonts using 145147239 bytes
- 128i,13n,137p,1888b,944s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/inconsolata/Inconsolatazi4
--Regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/Har
-anoAjiGothic-Bold.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/lm/l
-msans10-regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/lm/lms
-ans8-regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji
-/HaranoAjiGothic-Regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/publ
-ic/lm/lmsans12-regular.otf><e:/PGM/texlive/2024/texmf-dist/fonts/opentype/public
-/lm/lmsans10-bold.otf><e:/PGM/texlive/2024/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb>
-Output written on main.pdf (20 pages, 122939 bytes).
-
-PDF statistics: 291 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 131072)
- 40 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+ 24991 strings out of 476497
+ 125244,1977958 words of node,token memory allocated 789 words of node memory still in use:
+   8 hlist, 4 rule, 1 dir, 3 kern, 1 glyph, 109 attribute, 57 glue_spec, 21 attr
+ibute_list, 2 if_stack, 1 write, 8 user_defined, 1 pdf_colorstack nodes
+   avail lists: 1:6,2:132,3:3,4:4,5:7,7:5,9:8
+ 46290 multiletter control sequences out of 65536+600000
+ 41 fonts using 80835351 bytes
+ 128i,1n,119p,1782b,337s stack positions out of 10000i,1000n,20000p,200000b,200000s
+./main.tex:19:  ==> Fatal error occurred, no output PDF file produced!
