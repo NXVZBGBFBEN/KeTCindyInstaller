@@ -1,9 +1,9 @@
 [package]
 name = "ketcindyinstaller"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["NXVZBGBFBEN <nxvzbgbfben@gmail.com>"]
 edition = "2021"
-description = "A simple package manager for KeTCindy projects"
+description = "A simple package manager for the KeTCindy project"
 
 [[bin]]
 name = "ketpm"
