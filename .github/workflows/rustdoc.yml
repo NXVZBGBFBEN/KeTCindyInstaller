@@ -6,6 +6,7 @@ on:
       - 'develop'
     paths:
       - '**.rs'
+      - 'Cargo.toml'
   workflow_dispatch:
 
 jobs:
