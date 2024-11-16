@@ -16,6 +16,8 @@ jobs:
       - name: Add tag
         shell: bash
         run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           version="v$(cargo read-manifest | jq -r .version)"
           git tag -a "${version}" -m "Release ${version}"
           git push
