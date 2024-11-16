@@ -2,7 +2,7 @@
 A simple package manager for the KeTCindy project
 
 ## About
-KeTCindyInstaller is a simple package manager for the [KeTCindy project](https://s-takato.github.io/ketcindyorg/indexj.html).
+KeTCindyInstaller is a simple package manager for the [KeTCindy project](https://s-takato.github.io/ketcindyorg/indexe.html).
 It allows you to manage KeTCindy and its related packages, such as R and Maxima.
 
 Currently, I am prioritizing the development of the CLI, but I also plan to develop a GUI.
