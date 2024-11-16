@@ -2,7 +2,11 @@ name: rustdoc
 
 on:
   push:
-    paths: "src/**"
+    branches:
+      - 'develop'
+    paths:
+      - '**.rs'
+      - 'Cargo.toml'
   workflow_dispatch:
 
 jobs:
