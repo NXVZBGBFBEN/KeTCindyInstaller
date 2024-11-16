@@ -9,9 +9,6 @@ description = "A simple package manager for KeTCindy projects"
 name = "ketpm"
 path = "src/main.rs"
 
-[build]
-rustflags = ["-C", "target-feature=+crt-static"]
-
 [dependencies]
 anyhow = "1.0.86"
 clap = { version = "4.5.9", features = ["derive"] }
