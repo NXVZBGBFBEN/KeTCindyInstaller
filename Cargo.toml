@@ -8,3 +8,6 @@ description = "Cross-platform installer for KeTCindy"
 [dependencies]
 eframe = "0.31.1"
 env_logger = "0.11.7"
+log = "0.4.27"
+octocrab = "0.44.0"
+tokio = { version = "1.44.1", features = ["full"] }
