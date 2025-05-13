@@ -6,6 +6,8 @@ pub struct GUIFrontend {
     ketcindy_version_fetched: bool,
     ketcindy_selected_release_index: usize,
     ketcindy_releases: Arc<Mutex<Option<Vec<octocrab::models::repos::Release>>>>,
+    cinderella_version_fetched: bool,
+    cinderella_release: Arc<Mutex<Option<crate::utils::HomebrewResponse>>>,
     async_runtime: tokio::runtime::Runtime,
     current_page_index: usize,
 }
@@ -30,6 +32,8 @@ impl GUIFrontend {
             ketcindy_version_fetched: false,
             ketcindy_selected_release_index: 0,
             ketcindy_releases: Arc::new(Mutex::new(None)),
+            cinderella_version_fetched: false,
+            cinderella_release: Arc::new(Mutex::new(None)),
             async_runtime: tokio::runtime::Builder::new_multi_thread()
                 .worker_threads(1)
                 .enable_all()
@@ -68,7 +72,21 @@ impl GUIFrontend {
     }
 
     fn install_cinderella(&mut self, ui: &mut egui::Ui) {
+        if self.cinderella_version_fetched == false {
+            let cinderella_release = self.cinderella_release.clone();
+            self.async_runtime.spawn(async move {
+                *cinderella_release.lock().unwrap() =
+                    Some(crate::utils::fetch_homebrew_latest_release("cinderella").await);
+            });
+            self.cinderella_version_fetched = true;
+        }
         ui.heading("2. Installing Cinderella");
+        ui.indent("indent", |ui| {
+            ui.label("test");
+            if let Some(cinderella_release) = &*self.cinderella_release.lock().unwrap() {
+                ui.label(format!("{}", cinderella_release.version));
+            };
+        });
     }
 }
 
