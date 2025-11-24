@@ -1,2 +1,2 @@
 pub mod app;
-pub(crate) mod utils;
+pub(crate) mod package;
