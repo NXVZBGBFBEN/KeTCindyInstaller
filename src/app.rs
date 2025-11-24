@@ -1,39 +1,36 @@
-use eframe::egui;
 use std::sync::Arc;
-use std::sync::Mutex;
+
+use eframe::egui;
+
+use crate::package::Package;
+use crate::package::PackageKind;
 
 pub struct GUIFrontend {
-    ketcindy_version_fetched: bool,
-    ketcindy_selected_release_index: usize,
-    ketcindy_releases: Arc<Mutex<Option<Vec<octocrab::models::repos::Release>>>>,
-    cinderella_version_fetched: bool,
-    cinderella_release: Arc<Mutex<Option<crate::utils::HomebrewResponse>>>,
+    ketcindy: Arc<Package>,
+    cinderella: Arc<Package>,
+    r: Arc<Package>,
+    maxima: Arc<Package>,
+    packages_fetched: bool,
     async_runtime: tokio::runtime::Runtime,
     current_page_index: usize,
 }
 
 enum Page {
-    InstallKeTCindy,
-    InstallCinderella,
-    InstallR,
-    InstallMaxima,
+    SelectVersion,
 }
 
 impl GUIFrontend {
     const PAGES: &[Page] = &[
-        Page::InstallKeTCindy,
-        Page::InstallCinderella,
-        Page::InstallR,
-        Page::InstallMaxima,
+        Page::SelectVersion,
     ];
 
     pub fn new(_creation_context: &eframe::CreationContext<'_>) -> Self {
         Self {
-            ketcindy_version_fetched: false,
-            ketcindy_selected_release_index: 0,
-            ketcindy_releases: Arc::new(Mutex::new(None)),
-            cinderella_version_fetched: false,
-            cinderella_release: Arc::new(Mutex::new(None)),
+            ketcindy: Arc::new(Package::new(PackageKind::KeTCindy)),
+            cinderella: Arc::new(Package::new(PackageKind::Cinderella)),
+            r: Arc::new(Package::new(PackageKind::R)),
+            maxima: Arc::new(Package::new(PackageKind::Maxima)),
+            packages_fetched: false,
             async_runtime: tokio::runtime::Builder::new_multi_thread()
                 .worker_threads(1)
                 .enable_all()
@@ -43,50 +40,50 @@ impl GUIFrontend {
         }
     }
 
-    fn install_ketcindy(&mut self, ui: &mut egui::Ui) {
-        if self.ketcindy_version_fetched == false {
-            let ketcindy_releases = self.ketcindy_releases.clone();
-            self.async_runtime.spawn(async move {
-                *ketcindy_releases.lock().unwrap() =
-                    Some(crate::utils::fetch_github_releases("ketpic", "ketcindy").await);
-            });
-            self.ketcindy_version_fetched = true;
-        }
-        ui.heading("1. Installing KeTCindy");
-        ui.indent("indent_test", |ui| {
-            ui.label("select version:");
-            if let Some(ketcindy_releases) = &*self.ketcindy_releases.lock().unwrap() {
-                egui::ComboBox::from_id_salt("version_select").show_index(
-                    ui,
-                    &mut self.ketcindy_selected_release_index,
-                    ketcindy_releases.len(),
-                    |i| ketcindy_releases[i].tag_name.clone(),
-                );
-            } else {
-                ui.horizontal(|ui| {
-                    ui.spinner();
-                    ui.label("loading...");
+    fn select_version(&mut self, ui: &mut egui::Ui) {
+        if self.packages_fetched == false {
+            self.packages_fetched = true;
+
+            let packages = vec![
+                self.ketcindy.clone(),
+                self.cinderella.clone(),
+                self.r.clone(),
+                self.maxima.clone(),
+            ];
+            for package in packages {
+                self.async_runtime.spawn(async move {
+                    if let Err(e) = package.fetch_versions().await {
+                        eprintln!("{e}");
+                    }
                 });
             }
-        });
-    }
-
-    fn install_cinderella(&mut self, ui: &mut egui::Ui) {
-        if self.cinderella_version_fetched == false {
-            let cinderella_release = self.cinderella_release.clone();
-            self.async_runtime.spawn(async move {
-                *cinderella_release.lock().unwrap() =
-                    Some(crate::utils::fetch_homebrew_latest_release("cinderella").await);
-            });
-            self.cinderella_version_fetched = true;
         }
-        ui.heading("2. Installing Cinderella");
-        ui.indent("indent", |ui| {
-            ui.label("test");
-            if let Some(cinderella_release) = &*self.cinderella_release.lock().unwrap() {
-                ui.label(format!("{}", cinderella_release.version));
-            };
-        });
+
+        ui.heading("1. Select package version");
+
+        for (name, package) in [
+            ("KeTCindy", &self.ketcindy),
+            ("Cinderella", &self.cinderella),
+            ("R", &self.r),
+            ("Maxima", &self.maxima),
+        ] {
+            ui.indent(format!("indent_{name}"), |ui| {
+                ui.label(format!("{name}:"));
+                if let Some(versions) = &*package.versions.lock().unwrap() {
+                    egui::ComboBox::from_id_salt(format!("version_select_{name}")).show_index(
+                        ui,
+                        &mut *package.selected_version_index.lock().unwrap(),
+                        versions.len(),
+                        |i| versions[i].clone(),
+                    );
+                } else {
+                    ui.horizontal(|ui| {
+                        ui.spinner();
+                        ui.label("loading...");
+                    });
+                }
+            });
+        }
     }
 }
 
@@ -96,10 +93,7 @@ impl eframe::App for GUIFrontend {
             .frame(egui::Frame::default().inner_margin(15))
             .show(context, |ui| {
                 match Self::PAGES[self.current_page_index] {
-                    Page::InstallKeTCindy => self.install_ketcindy(ui),
-                    Page::InstallCinderella => self.install_cinderella(ui),
-                    Page::InstallR => (),
-                    Page::InstallMaxima => (),
+                    Page::SelectVersion => self.select_version(ui),
                 }
                 ui.with_layout(egui::Layout::right_to_left(egui::Align::BOTTOM), |ui| {
                     ui.horizontal(|ui| {
