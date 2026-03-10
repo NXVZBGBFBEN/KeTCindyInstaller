@@ -1,121 +1,94 @@
-use std::sync::Arc;
-
 use eframe::egui;
 
-use crate::package::Package;
-use crate::package::PackageKind;
+use crate::installer::Installer;
+use crate::package::PackageState;
 
 pub struct GUIFrontend {
-    ketcindy: Arc<Package>,
-    cinderella: Arc<Package>,
-    r: Arc<Package>,
-    maxima: Arc<Package>,
-    packages_fetched: bool,
-    async_runtime: tokio::runtime::Runtime,
-    current_page_index: usize,
-}
-
-enum Page {
-    SelectVersion,
+    installer: Installer,
 }
 
 impl GUIFrontend {
-    const PAGES: &[Page] = &[
-        Page::SelectVersion,
-    ];
-
     pub fn new(_creation_context: &eframe::CreationContext<'_>) -> Self {
-        Self {
-            ketcindy: Arc::new(Package::new(PackageKind::KeTCindy)),
-            cinderella: Arc::new(Package::new(PackageKind::Cinderella)),
-            r: Arc::new(Package::new(PackageKind::R)),
-            maxima: Arc::new(Package::new(PackageKind::Maxima)),
-            packages_fetched: false,
-            async_runtime: tokio::runtime::Builder::new_multi_thread()
-                .worker_threads(1)
-                .enable_all()
-                .build()
-                .unwrap(),
-            current_page_index: 0,
-        }
-    }
-
-    fn select_version(&mut self, ui: &mut egui::Ui) {
-        if self.packages_fetched == false {
-            self.packages_fetched = true;
-
-            let packages = vec![
-                self.ketcindy.clone(),
-                self.cinderella.clone(),
-                self.r.clone(),
-                self.maxima.clone(),
-            ];
-            for package in packages {
-                self.async_runtime.spawn(async move {
-                    if let Err(e) = package.fetch_versions().await {
-                        eprintln!("{e}");
-                    }
-                });
-            }
-        }
-
-        ui.heading("1. Select package version");
-
-        for (name, package) in [
-            ("KeTCindy", &self.ketcindy),
-            ("Cinderella", &self.cinderella),
-            ("R", &self.r),
-            ("Maxima", &self.maxima),
-        ] {
-            ui.indent(format!("indent_{name}"), |ui| {
-                ui.label(format!("{name}:"));
-                if let Some(versions) = &*package.versions.lock().unwrap() {
-                    egui::ComboBox::from_id_salt(format!("version_select_{name}")).show_index(
-                        ui,
-                        &mut *package.selected_version_index.lock().unwrap(),
-                        versions.len(),
-                        |i| versions[i].clone(),
-                    );
-                } else {
-                    ui.horizontal(|ui| {
-                        ui.spinner();
-                        ui.label("loading...");
-                    });
-                }
-            });
-        }
+        Self { installer: Installer::new() }
     }
 }
 
 impl eframe::App for GUIFrontend {
     fn update(&mut self, context: &egui::Context, _frame: &mut eframe::Frame) {
+        let had_events = self.installer.poll_events();
+        if had_events {
+            context.request_repaint();
+        }
+
         egui::CentralPanel::default()
             .frame(egui::Frame::default().inner_margin(15))
             .show(context, |ui| {
-                match Self::PAGES[self.current_page_index] {
-                    Page::SelectVersion => self.select_version(ui),
+                ui.heading("KeTCindy Installer");
+                let packages = self.installer.packages();
+
+                for package in packages {
+                    ui.indent(format!("package_{}", package.kind), |ui| {
+                        ui.label(format!("{}", package.kind));
+                        ui.horizontal(|ui| {
+                            match package.state {
+                                PackageState::Initialized => {
+                                    ui.label("Initialized");
+                                    self.installer.fetch_versions(package.kind);
+                                },
+                                PackageState::Fetching => {
+                                    ui.spinner();
+                                    ui.label("Fetching...");
+                                },
+                                PackageState::Fetched { versions, selected_index } => {
+                                    let mut is_selected = selected_index.is_some();
+                                    if ui.checkbox(&mut is_selected, "").changed() {
+                                        if is_selected {
+                                            self.installer.select_version(package.kind, Some(0));
+                                        } else {
+                                            self.installer.select_version(package.kind, None);
+                                        }
+                                    }
+                                    ui.add_enabled_ui(is_selected, |ui| {
+                                        if let Some(index) = selected_index {
+                                            let mut temp_index = index;
+                                            if egui::ComboBox::from_id_salt(format!("versions_{}", package.kind))
+                                                .show_index(ui, &mut temp_index, versions.len(), |i| &versions[i])
+                                                .changed()
+                                            {
+                                                self.installer.select_version(package.kind, Some(temp_index));
+                                            }
+                                        } else {
+                                            ui.label("(will not be installed)");
+                                        }
+                                    });
+                                },
+                                PackageState::Downloading { progress } => {
+                                    ui.add(egui::ProgressBar::new(progress).show_percentage());
+                                },
+                                PackageState::Downloaded { .. } => {
+                                    ui.label("downloaded");
+                                },
+                                PackageState::Installing => {
+                                    ui.spinner();
+                                    ui.label("Installing...");
+                                },
+                                PackageState::Installed => {
+                                    ui.label("Installed");
+                                },
+                                PackageState::Error(msg) => {
+                                    ui.colored_label(egui::Color32::RED, format!("Error: {}", msg));
+                                }
+                            }
+                        });
+                    });
                 }
                 ui.with_layout(egui::Layout::right_to_left(egui::Align::BOTTOM), |ui| {
-                    ui.horizontal(|ui| {
-                        // disable the `Next >` button on the last page
-                        ui.add_enabled_ui(
-                            self.current_page_index + 1 < Self::PAGES.len(),
-                            |ui| {
-                                if ui.button("Next >").clicked() {
-                                    self.current_page_index += 1;
-                                }
-                            }
-                        );
-                        // disable the `< Back` button on the first page
-                        ui.add_enabled_ui(
-                            0 < self.current_page_index,
-                            |ui| {
-                                if ui.button("< Back").clicked() {
-                                    self.current_page_index -= 1;
-                                }
-                            }
-                        );
+                    let can_install = self.installer.packages().iter().any(|p| {
+                        matches!(p.state, PackageState::Fetched { selected_index: Some(_), .. })
                     });
+                    if ui.add_enabled(can_install, egui::Button::new("Install")).clicked() {
+                        self.installer.start_installation();
+                    }
                 });
             });
     }
