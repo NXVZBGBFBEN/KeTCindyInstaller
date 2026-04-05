@@ -15,10 +15,8 @@ impl GUIFrontend {
 
 impl eframe::App for GUIFrontend {
     fn update(&mut self, context: &egui::Context, _frame: &mut eframe::Frame) {
-        let had_events = self.installer.poll_events();
-        if had_events {
-            context.request_repaint();
-        }
+        context.request_repaint();
+        self.installer.poll_events();
 
         egui::CentralPanel::default()
             .frame(egui::Frame::default().inner_margin(15))

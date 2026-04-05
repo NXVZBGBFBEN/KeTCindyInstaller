@@ -8,6 +8,14 @@ enum BackendEvent {
         package_kind: PackageKind,
         versions: Vec<String>,
     },
+    Downloading {
+        package_kind: PackageKind,
+        progress: f32,
+    },
+    Downloaded {
+        package_kind: PackageKind,
+        path: std::path::PathBuf,
+    },
     Error {
         package_kind: PackageKind,
         message: String,
@@ -67,7 +75,35 @@ impl Installer {
 
     // TODO: インストール処理書く
     pub fn start_installation(&mut self) {
-        panic!("oh shit");
+        use crate::worker;
+
+        // ダウンロード処理
+        for package in &mut self.packages {
+            // バージョンが選択されているパッケージのみ処理を行う
+            if let PackageState::Fetched { versions, selected_index: Some(selected_index) } = &package.state {
+                let package_kind = package.kind;
+                let version = versions[*selected_index].clone();
+
+                let tx = self.worker_event_tx.clone();
+                self.async_runtime.spawn(async move {
+                    tx.send(BackendEvent::Downloading { package_kind, progress: 0f32 }).await.ok();
+
+                    // 進捗を引数にとるクロージャで通知
+                    let download_result = worker::download_package(package_kind, &version, |progress| {
+                        let _ = tx.try_send(BackendEvent::Downloading {
+                            package_kind,
+                            progress,
+                        });
+                    }).await;
+
+                    let event = match download_result {
+                        Ok(path) => BackendEvent::Downloaded { package_kind, path },
+                        Err(error) => BackendEvent::Error { package_kind, message: error.to_string() },
+                    };
+                    tx.send(event).await.ok();
+                });
+            }
+        }
     }
 
     // workerからのイベントがあるかを確認して，ある場合は処理
@@ -90,9 +126,15 @@ impl Installer {
                     selected_index: Some(0),    // デフォルトで最新を選択
                 };
             },
+            BackendEvent::Downloading { package_kind, progress } => {
+                self.package(package_kind).state = PackageState::Downloading { progress };
+            },
+            BackendEvent::Downloaded { package_kind, path } => {
+                self.package(package_kind).state = PackageState::Downloaded { path };
+            },
             BackendEvent::Error { package_kind, message } => {
                 // TODO: エラーハンドリング
-                panic!("aaa!")
+                panic!("{message}")
             },
         }
     }
