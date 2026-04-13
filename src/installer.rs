@@ -2,6 +2,7 @@ use crate::package::Package;
 use crate::package::PackageKind;
 use crate::package::PackageState;
 use anyhow::Context;
+use std::path::PathBuf;
 
 enum BackendEvent {
     Fetched {
@@ -14,7 +15,13 @@ enum BackendEvent {
     },
     Downloaded {
         package_kind: PackageKind,
-        path: std::path::PathBuf,
+        path: PathBuf,
+    },
+    Installing {
+        package_kind: PackageKind,
+    },
+    Installed {
+        package_kind: PackageKind,
     },
     Error {
         package_kind: PackageKind,
@@ -32,10 +39,10 @@ pub(crate) struct Installer {
 impl Installer {
     pub fn new() -> Self {
         let packages = vec![
-            Package::new(PackageKind::KeTCindy),
             Package::new(PackageKind::Cinderella),
             Package::new(PackageKind::R),
             Package::new(PackageKind::Maxima),
+            Package::new(PackageKind::KeTCindy),
         ];
         let (worker_event_tx, worker_event_rx) = tokio::sync::mpsc::channel(8);
         let async_runtime = tokio::runtime::Builder::new_multi_thread()
@@ -77,15 +84,21 @@ impl Installer {
     pub fn start_installation(&mut self) {
         use crate::worker;
 
-        // ダウンロード処理
-        for package in &mut self.packages {
-            // バージョンが選択されているパッケージのみ処理を行う
+        let target_packages = self.packages.iter().filter_map(|package| {
             if let PackageState::Fetched { versions, selected_index: Some(selected_index) } = &package.state {
-                let package_kind = package.kind;
-                let version = versions[*selected_index].clone();
+                Some((package.kind, versions[*selected_index].clone()))
+            } else {
+                None
+            }
+        }).collect::<Vec<(PackageKind, String)>>();
 
-                let tx = self.worker_event_tx.clone();
-                self.async_runtime.spawn(async move {
+        let tx = self.worker_event_tx.clone();
+        self.async_runtime.spawn(async move {
+            // ダウンロード処理
+            let mut download_handles = Vec::new();
+            for (package_kind, version) in target_packages {
+                let tx = tx.clone();
+                let download_handle = tokio::spawn(async move {
                     tx.send(BackendEvent::Downloading { package_kind, progress: 0f32 }).await.ok();
 
                     // 進捗を引数にとるクロージャで通知
@@ -96,14 +109,37 @@ impl Installer {
                         });
                     }).await;
 
-                    let event = match download_result {
-                        Ok(path) => BackendEvent::Downloaded { package_kind, path },
-                        Err(error) => BackendEvent::Error { package_kind, message: error.to_string() },
+                    match download_result {
+                        Ok(path) => {
+                            tx.send(BackendEvent::Downloaded { package_kind, path: path.clone() }).await.ok();
+                            return Ok((package_kind, path))
+                        },
+                        Err(error) => {
+                            tx.send(BackendEvent::Error { package_kind, message: error.to_string() }).await.ok();
+                            return Err(())
+                        }
                     };
-                    tx.send(event).await.ok();
                 });
+                download_handles.push(download_handle);
             }
-        }
+
+            // インストール処理
+            let mut downloaded_packages = Vec::<(PackageKind, PathBuf)>::new();
+            for download_handle in download_handles {
+                if let Ok(Ok((package_kind, path))) = download_handle.await {
+                    downloaded_packages.push((package_kind, path));
+                }
+            }
+            for (package_kind, path) in downloaded_packages {
+                tx.send(BackendEvent::Installing { package_kind }).await.ok();
+                let install_result = worker::install_package(package_kind, path).await;
+                let event = match install_result {
+                    Ok(()) => BackendEvent::Installed { package_kind },
+                    Err(error) => BackendEvent::Error { package_kind, message: error.to_string() },
+                };
+                tx.send(event).await.ok();
+            }
+        });
     }
 
     // workerからのイベントがあるかを確認して，ある場合は処理
@@ -132,9 +168,15 @@ impl Installer {
             BackendEvent::Downloaded { package_kind, path } => {
                 self.package(package_kind).state = PackageState::Downloaded { path };
             },
+            BackendEvent::Installing { package_kind } => {
+                self.package(package_kind).state = PackageState::Installing;
+            },
+            BackendEvent::Installed { package_kind } => {
+                self.package(package_kind).state = PackageState::Installed;
+            },
             BackendEvent::Error { package_kind, message } => {
                 // TODO: エラーハンドリング
-                panic!("{message}")
+                panic!("[{package_kind}] {message}")
             },
         }
     }

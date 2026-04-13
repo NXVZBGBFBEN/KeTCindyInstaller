@@ -1,10 +1,12 @@
 mod downloader;
 mod fetcher;
+mod installer;
 
 use crate::package::PackageKind;
 
 use anyhow::Result;
 use anyhow::Context;
+use std::path::PathBuf;
 
 pub(crate) async fn fetch_versions(package_kind: PackageKind) -> Result<Vec<String>> {
     let versions = match package_kind {
@@ -33,7 +35,7 @@ pub(crate) async fn download_package<F>(
     package_kind: PackageKind,
     version: &str,
     progress_callback: F
-) -> Result<std::path::PathBuf>
+) -> Result<PathBuf>
 where
     F: FnMut(f32) + Send,
 {
@@ -89,4 +91,42 @@ where
     let package_path = downloader::download_file(download_url, download_destination, progress_callback).await?;
 
     Ok(package_path)
+}
+
+pub(crate) async fn install_package(package_kind: PackageKind, source_path: PathBuf) -> Result<()> {
+    match package_kind {
+        PackageKind::KeTCindy => {
+            let install_directory = if cfg!(target_os = "windows") {
+                PathBuf::from("C:\\ketcindy")
+            } else if cfg!(target_os = "macos") {
+                directories::ProjectDirs::from("", "nxvzbgbfben", "ketcindyinstaller")
+                    .context("Failed to create the project directory")?.data_dir().join("packages").join("ketcindy")
+            } else {
+                unimplemented!();
+            };
+
+            std::fs::create_dir_all(&install_directory)?;
+            installer::install_zip(source_path, install_directory).await?;
+            tokio::process::Command::new("explorer").args(["C:\\ketcindy\\doc"]).status().await?;
+        },
+        PackageKind::Cinderella => {
+            #[cfg(target_os = "windows")]
+            installer::install_exe(source_path).await?;
+            #[cfg(target_os = "macos")]
+            installer::install_dmg(source_path).await?;
+        },
+        PackageKind::R => {
+            #[cfg(target_os = "windows")]
+            installer::install_exe(source_path).await?;
+            #[cfg(target_os = "macos")]
+            installer::install_pkg(source_path).await?;
+        },
+        PackageKind::Maxima => {
+            #[cfg(target_os = "windows")]
+            installer::install_exe(source_path).await?;
+            #[cfg(target_os = "macos")]
+            installer::install_dmg(source_path).await?;
+        },
+    }
+    Ok(())
 }
