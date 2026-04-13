@@ -80,8 +80,8 @@ where
                 download_destination.push(format!("{package_kind}_{version}.exe"));
                 Url::parse(&format!("https://sourceforge.net/projects/maxima/files/Maxima-Windows/{version}-Windows/maxima-{version}-win64.exe/download"))?
             } else if cfg!(target_os = "macos") {
-                download_destination.push(format!("{package_kind}_{version}.dmg"));
-                Url::parse(&format!("https://sourceforge.net/projects/maxima/files/Maxima-MacOS/{version}-macOS/MacPorts-Maxima-{version}.dmg/download"))?
+                download_destination.push(format!("{package_kind}_5.46.0.dmg"));
+                Url::parse(&format!("https://sourceforge.net/projects/maxima/files/Maxima-MacOS/5.46.0-macOS/MacPorts-Maxima-5.46.0.dmg/download"))?
             } else {
                 unimplemented!()
             }
