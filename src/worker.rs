@@ -93,7 +93,7 @@ where
         PackageKind::KeTTeX => {
             download_destination.push(format!("{package_kind}_{version}.zip"));
             let version_trimmed = version.trim_start_matches("v0.");
-            Url::parse(&format!("https://github.com/ketpic/kettex/releases/download/{version}/KeTTeX-windows-{version_trimmed}.ip"))?
+            Url::parse(&format!("https://github.com/ketpic/kettex/releases/download/{version}/KeTTeX-windows-{version_trimmed}.zip"))?
         },
     };
 
