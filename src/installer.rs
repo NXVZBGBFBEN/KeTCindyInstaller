@@ -42,6 +42,7 @@ impl Installer {
             Package::new(PackageKind::Cinderella),
             Package::new(PackageKind::R),
             Package::new(PackageKind::Maxima),
+            Package::new(PackageKind::KeTTeX),
             Package::new(PackageKind::KeTCindy),
         ];
         let (worker_event_tx, worker_event_rx) = tokio::sync::mpsc::channel(8);
@@ -176,7 +177,7 @@ impl Installer {
             },
             BackendEvent::Error { package_kind, message } => {
                 // TODO: エラーハンドリング
-                panic!("[{package_kind}] {message}")
+                println!("[{package_kind}] {message}")
             },
         }
     }

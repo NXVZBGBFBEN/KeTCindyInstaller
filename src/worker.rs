@@ -26,6 +26,10 @@ pub(crate) async fn fetch_versions(package_kind: PackageKind) -> Result<Vec<Stri
             let release = fetcher::fetch_from_homebrew("maxima").await?;
             vec![release.version]
         },
+        PackageKind::KeTTeX => {
+            let releases = fetcher::fetch_from_github("ketpic", "kettex").await?;
+            releases.into_iter().map(|release| release.tag_name).collect()
+        },
     };
 
     Ok(versions)
@@ -86,6 +90,11 @@ where
                 unimplemented!()
             }
         },
+        PackageKind::KeTTeX => {
+            download_destination.push(format!("{package_kind}_{version}.zip"));
+            let version_trimmed = version.trim_start_matches("v0.");
+            Url::parse(&format!("https://github.com/ketpic/kettex/releases/download/{version}/KeTTeX-windows-{version_trimmed}.ip"))?
+        },
     };
 
     let package_path = downloader::download_file(download_url, download_destination, progress_callback).await?;
@@ -126,6 +135,18 @@ pub(crate) async fn install_package(package_kind: PackageKind, source_path: Path
             installer::install_exe(source_path).await?;
             #[cfg(target_os = "macos")]
             installer::install_dmg(source_path).await?;
+        },
+        PackageKind::KeTTeX => {
+            let install_directory = if cfg!(target_os = "windows") {
+                directories::ProjectDirs::from("", "nxvzbgbfben", "ketcindyinstaller")
+                    .context("Failed to create the project directory")?.data_dir().join("packages").join("kettex")
+            } else {
+                unimplemented!();
+            };
+
+            std::fs::create_dir_all(&install_directory)?;
+            installer::install_zip(source_path, install_directory.clone()).await?;
+            tokio::process::Command::new(install_directory.join("kettexinst.cmd")).status().await?;
         },
     }
     Ok(())

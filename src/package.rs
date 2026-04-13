@@ -6,6 +6,7 @@ pub(crate) enum PackageKind {
     Cinderella,
     R,
     Maxima,
+    KeTTeX,
 }
 
 #[derive(Clone)]
